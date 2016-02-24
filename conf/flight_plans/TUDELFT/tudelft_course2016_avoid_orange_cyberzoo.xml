@@ -98,7 +98,7 @@
       <stay wp="STDBY"/>
       <exception cond="block_time > 1" deroute="GetOutOfObstacleZone"/>
     </block>
-    <block name="GetOutOfObstacleZone">
+    <block name="GetOutOfObgit config --global user.namestacleZone">
       <call fun="moveWaypointForwards(WP_GOAL,0.5)"/>
       <call fun="chooseRandomIncrementAvoidance()"/>
       <stay wp="GOAL"/>
@@ -119,6 +119,7 @@
     <block name="Landed">
       <call fun="NavKillThrottle()"/>
       <attitude pitch="0" roll="0" throttle="0" until="FALSE" vmode="throttle"/>
+     <stay wp="TD"/>
     </block>
   </blocks>
 </flight_plan>
