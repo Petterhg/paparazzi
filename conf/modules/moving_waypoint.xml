@@ -1,0 +1,16 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="moving_waypoint">
+  <doc>
+    <description>A first attempt to create a module which is able to do stuff with waypoints. Wish good luck for me!</description>
+  </doc>
+  <header>
+    <file name="moving_waypoint.h"/>
+  </header>
+  <init fun="initMyWaypoint()"/>
+  <event fun="fcn_moving_waypoint"/>
+  <makefile>
+    <file name="moving_waypoint.c"/>
+  </makefile>
+</module>
+

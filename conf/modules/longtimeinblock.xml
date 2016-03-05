@@ -1,0 +1,15 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="longtimeinblock">
+  <doc>
+    <description>Second attempt to implement CrashCourse3</description>
+  </doc>
+  <header>
+    <file name="longtimeinblock.h"/>
+  </header>
+  <event fun="fcnlongtimeinblock"/>
+  <makefile>
+    <file name="longtimeinblock.c"/>
+  </makefile>
+</module>
+

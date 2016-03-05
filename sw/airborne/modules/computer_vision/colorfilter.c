@@ -32,13 +32,22 @@
 #include <std.h>
 
 // Filter Settings
-uint8_t color_lum_min = 105;
-uint8_t color_lum_max = 205;
-uint8_t color_cb_min  = 52;
-uint8_t color_cb_max  = 140;
-uint8_t color_cr_min  = 180;
+
+uint8_t color_lum_min = 4;
+uint8_t color_lum_max = 91;
+uint8_t color_cb_min  = 0;
+uint8_t color_cb_max  = 124;
+uint8_t color_cr_min  = 127;
 uint8_t color_cr_max  = 255;
 
+/*
+uint8_t color_lum_min = 90;
+uint8_t color_lum_max = 220;
+uint8_t color_cb_min  = 30;
+uint8_t color_cb_max  = 165;
+uint8_t color_cr_min  = 150;
+uint8_t color_cr_max  = 255;
+*/
 // Result
 int color_count = 0;
 
