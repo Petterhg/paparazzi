@@ -11,7 +11,6 @@
       <subsystem name="udp"/>
     </target>
 
-    <!--define name="USE_SONAR" value="TRUE"/-->
 
 	<!-- Subsystem section -->
     <subsystem name="telemetry" type="transparent_udp"/>
@@ -32,11 +31,29 @@
 <!-- If there is a variable you can define in your module you can add it within the load node-->
 <!-- Note that for vision the order in which modules are loaded is important -->
 <!-- If you place cv_colorfilter before your own module your own module will only get the filtered image-->
+
+
   <modules main_freq="512">
+
+
     <load name="geo_mag.xml"/>
     <load name="air_data.xml"/>
-    <load name="send_imu_mag_current.xml"/>
 
+
+  <load name="sonar_bebop.xml">
+      <define name="USE_SONAR" value="" />
+      <!--<define name="SENSOR_SYNC_SEND_SONAR" value="TRUE"/> -->
+    </load> 
+
+	<load name="agl_dist.xml">
+	<define name="AGL_DIST_SONAR_ID" value="ABI_BROADCAST" />
+	<define name="AGL_DIST_SONAR_MAX_RANGE" value="7" />
+       <define name="AGL_DIST_SONAR_MIN_RANGE" value="0.2" />
+       <define name="AGL_DIST_SONAR_FILTER" value="5" />
+     </load> 
+
+
+    <load name="send_imu_mag_current.xml"/>
     <!--load name="logger_file.xml">
       <define name="FILE_LOGGER_PATH" value="/data/ftp/internal_000"/>
     </load-->
@@ -55,7 +72,11 @@
     <load name="orange_avoider.xml"/> 
     <load name="longtimeinblock.xml"/>
     <load name="moving_waypoint.xml"/>
+
   </modules>
+
+
+
 
   <commands>
     <axis name="PITCH" failsafe_value="0"/>
@@ -124,10 +145,13 @@
     <define name="H_Z" value="0.9211303"/>
   </section>
 
+
+
+<!--
   <section name="INS" prefix="INS_">
-    <define name="SONAR_MAX_RANGE" value="2.2"/>
+    <define name="SONAR_MAX_RANGE" value="4"/>
     <define name="SONAR_UPDATE_ON_AGL" value="TRUE"/>
-  </section>
+  </section> -->
 
   <section name="RC_SETPOINT" prefix="STABILIZATION_ATTITUDE_">
     <!-- setpoint limits for attitude stabilization rc flight -->
