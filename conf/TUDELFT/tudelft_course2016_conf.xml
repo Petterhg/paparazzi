@@ -8,7 +8,7 @@
    flight_plan="flight_plans/rotorcraft_basic.xml"
    settings="settings/rotorcraft_basic.xml settings/control/rotorcraft_guidance.xml [settings/control/stabilization_att_indi.xml] settings/control/stabilization_rate.xml"
    settings_modules="modules/geo_mag.xml [modules/air_data.xml] modules/video_thread.xml modules/cv_colorfilter.xml [modules/video_rtp_stream.xml]"
-   gui_color="#ffffb1c0b1c0"
+   gui_color="#7231945affff"
   />
   <aircraft
    name="bebop_video"

@@ -53,9 +53,9 @@
 
 
     <load name="send_imu_mag_current.xml"/>
-    <!--load name="logger_file.xml">
+    <load name="logger_file.xml">
       <define name="FILE_LOGGER_PATH" value="/data/ftp/internal_000"/>
-    </load-->
+    </load>
 
 
     <load name="video_thread.xml">
