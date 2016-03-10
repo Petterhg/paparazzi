@@ -53,9 +53,10 @@
 
 
     <load name="send_imu_mag_current.xml"/>
+    
     <load name="logger_file.xml">
       <define name="FILE_LOGGER_PATH" value="/data/ftp/internal_000"/>
-    </load>
+    </load> 
 
 
     <load name="video_thread.xml">
@@ -70,10 +71,10 @@
       <define name="VIEWVIDEO_DOWNSIZE_FACTOR" value="1"/>
     </load>
 
-
+	<!--
     <load name="orange_avoider.xml"/> 
     <load name="longtimeinblock.xml"/>
-    <load name="moving_waypoint.xml"/>
+    <load name="moving_waypoint.xml"/> -->
 
   </modules>
 

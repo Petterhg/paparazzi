@@ -98,7 +98,7 @@
       <stay wp="STDBY"/>
       <exception cond="block_time > 1" deroute="GetOutOfObstacleZone"/>
     </block>
-    <block name="GetOutOfObgit config --global user.namestacleZone">
+    <block name="GetOutOfObstacleZone">
       <call fun="moveWaypointForwards(WP_GOAL,0.5)"/>
       <call fun="chooseRandomIncrementAvoidance()"/>
       <stay wp="GOAL"/>

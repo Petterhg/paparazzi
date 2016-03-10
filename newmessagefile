@@ -1,0 +1,870 @@
+Jan  1 00:00:03 (none) syslog.info syslogd started: BusyBox v1.20.2
+Jan  1 00:00:03 (none) user.info rcS: rcS init script ...
+Jan  1 00:00:03 (none) user.info rcS_BLDC: rcS_BLDC init script
+Jan  1 00:00:04 (none) user.info rcS_BLDC: Start bootloading BLDC firmware
+Jan  1 00:00:06 (none) user.info rcS_BLDC: *** BLDC Host Bootloader ***
+Jan  1 00:00:06 (none) user.info rcS_BLDC: I found no BLDC firmware to flash. It's been already bootloaded. Check integrity of BLDC flash:
+Jan  1 00:00:06 (none) user.info rcS_BLDC: BLDCBtldr_VerifyApplication: 0
+Jan  1 00:00:06 (none) user.info rcS_BLDC:     ===> no flash corruptions detected !
+Jan  1 00:00:06 (none) user.info rcS_BLDC: Send the 'End Bootloader Operation' message
+Jan  1 00:00:06 (none) user.info rcS_BLDC: Check if the new flashed firmware is a valid BLC firmware
+Jan  1 00:00:06 (none) user.info rcS_BLDC:     ==> New BLDC firmware 1:18:R:4
+Jan  1 00:00:06 (none) user.info rcS_BLDC:     Rename BLDC firmware file done !
+Jan  1 00:00:06 (none) user.info rcS_BLDC: *** BLDC Host Bootloader finished with error code 0 ***
+Jan  1 00:00:06 (none) user.info rcS_BLDC: 0
+Jan  1 00:00:06 (none) user.info rcS_BLDC: End bootloading BLDC firmware
+Jan  1 00:00:06 (none) user.notice rcS_BLDC: Battery voltage is ok.
+Jan  1 00:00:06 (none) user.info rcS_BLDC: rcS_BLDC init script done
+Jan  1 00:00:06 (none) user.info rcS: Groups and priorities
+Jan  1 00:00:06 (none) user.info rcS: Mounting NAND Flash
+Jan  1 00:00:06 (none) user.info rcS: Serial number : PI040338AB5C044004
+Jan  1 00:00:07 (none) user.info rcS: Product name : BebopDrone-C044004
+Jan  1 00:00:07 (none) user.info rcS: Start udev
+Jan  1 00:00:07 (none) user.info broadcom_setup.sh: (insmod) : CURRENT_TTY = /dev/console
+Jan  1 00:00:07 (none) user.info broadcom_setup.sh: Load Modules :
+Jan  1 00:00:07 (none) daemon.err ujuba_firmware[232]: Could not find firmware 'brcm/bcm43526-ffff-ffff.nvm' in '/lib/firmware'
+Jan  1 00:00:07 (none) daemon.err ujuba_firmware[232]: Could not find firmware 'brcm/bcm43526-ffff-ffff.nvm' in '/lib/firmware/3.4.11'
+Jan  1 00:00:07 (none) daemon.err ujuba_firmware[232]: Failed finding firmware 'brcm/bcm43526-ffff-ffff.nvm'
+Jan  1 00:00:07 (none) daemon.err ujuba_firmware[232]: Failed loading firmware 'brcm/bcm43526-ffff-ffff.nvm'
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: WIFI BCM NEW STATE : WIFI_BCM_DRIVER_LOADED
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: (create_net_interface) : CURRENT_TTY = /dev/console
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Create Access Point :
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Disable Roaming
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Set STBC mode
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Set Core Chains
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Set Retries
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Set Bandwidth
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Disable Aggregation
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Set Fragmentation
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Set DTIM period
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Set MAC address A0:14:3D:66:E3:01
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Do NOT use BCM autocountry
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: The actual country is NL/0
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: The actual power is:TxPower is 127 qdbm, 31.75 dbm, 1496 mW  Override is Off
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Start AP...
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Mode 2.4 GHz
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Chanspec set to 0x1006
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Chanspec set to 0x1009
+Jan  1 00:00:08 (none) user.info broadcom_setup.sh: Set Datarates     MCS[0-7] + 6 legacy
+Jan  1 00:00:09 (none) user.info broadcom_setup.sh: Setting SSID to BebopDrone-C044004
+Jan  1 00:00:09 (none) user.info broadcom_setup.sh: Setting SSID: "BebopDrone-C044004"
+Jan  1 00:00:09 (none) user.info broadcom_setup.sh: Disable RTS/CTS
+Jan  1 00:00:09 (none) user.info broadcom_setup.sh: gmode_protection
+Jan  1 00:00:09 (none) user.info broadcom_setup.sh: 	Get G protection mode. (0=disabled, 1=enabled)
+Jan  1 00:00:09 (none) user.info broadcom_setup.sh: Set Long Guard Interval
+Jan  1 00:00:09 (none) user.info broadcom_setup.sh: Up BCM interface...
+Jan  1 00:00:09 (none) user.info broadcom_setup.sh: Starting server...
+Jan  1 00:00:09 (none) user.info broadcom_setup.sh: WIFI BCM OK
+Jan  1 00:00:09 (none) user.info broadcom_setup.sh: WIFI BCM NEW STATE : WIFI_BCM_ACCESS_POINT_OK
+Jan  1 00:00:09 (none) user.info rcS: Start ujubaclient
+Jan  1 00:00:09 (none) user.info rcS_video: rcS_video init script...
+Jan  1 00:00:09 (none) user.info rcS_video: Enable Video
+Jan  1 00:00:09 (none) user.info rcS_video: rcS_video init script done
+Jan  1 00:00:09 (none) user.info rcS_vision: rcS_vision init script...
+Jan  1 00:00:09 (none) user.info rcS_vision: Enable Vision
+Jan  1 00:00:09 (none) user.info rcS_vision: rcS_vision init script done
+Jan  1 00:00:09 (none) user.info rcS_IO: rcS_IO init script...
+Jan  1 00:00:09 (none) user.info rcS_IO: Enable IO
+Jan  1 00:00:09 (none) user.info rcS_IO: rcS_IO init script done
+Jan  1 00:00:09 (none) user.info rcS: Loading modules
+Jan  1 00:00:10 (none) user.info rcS_eMMC: rcS_eMMC init script ...
+Jan  1 00:00:10 (none) user.info eMMC_connect: Connecting eMMC...
+Jan  1 00:00:10 (none) user.info eMMC_wait: eMMC device ready.
+Jan  1 00:00:10 (none) user.info eMMC_check_fs: Checking eMMC file-system...
+Jan  1 00:00:10 (none) user.info eMMC_check_clean: Checking eMMC...
+Jan  1 00:00:10 (none) user.info eMMC_check_clean: eMMC filesystem OK
+Jan  1 00:00:10 (none) user.info eMMC_checktuning: Check tuning of eMMC...
+Jan  1 00:00:10 (none) user.info eMMC_mount: Mounting eMMC...
+Jan  1 00:00:10 (none) user.notice eMMC_mount: eMMC available
+Jan  1 00:00:10 (none) user.info rcS_eMMC: rcS_eMMC init script done
+Jan  1 00:00:10 BebopDrone-C044004 syslog.info syslogd started: BusyBox v1.20.2
+Jan  1 00:00:10 BebopDrone-C044004 user.info rcS_gps: rcS_gps init script...
+Jan  1 00:00:10 BebopDrone-C044004 user.info rcS_gps: GPS uses /dev/ttyPA1
+Jan  1 00:00:10 BebopDrone-C044004 user.info rcS_gps: rcS_gps init script done
+Jan  1 00:00:10 BebopDrone-C044004 user.info rcS_usbmode: rcS_usbmode init script...
+Jan  1 00:00:10 BebopDrone-C044004 user.info rcS_usbmode: USB: Hardware is HW08 or newer; usb_mode is used
+Jan  1 00:00:10 BebopDrone-C044004 user.info MTP: starting service
+Jan  1 00:00:10 BebopDrone-C044004 user.info rcS_usbmode: rcS_usbmode init script done
+Jan  1 00:00:10 BebopDrone-C044004 user.info rcS: Start Avahi daemon
+Jan  1 00:00:10 BebopDrone-C044004 daemon.info avahi-daemon[523]: avahi-daemon 0.6.29 starting up.
+Jan  1 00:00:10 BebopDrone-C044004 daemon.info avahi-daemon[523]: No service file found in /etc/avahi/services.
+Jan  1 00:00:10 BebopDrone-C044004 daemon.info avahi-daemon[523]: Joining mDNS multicast group on interface eth0.IPv6 with address fe80::a214:3dff:fe66:e301.
+Jan  1 00:00:10 BebopDrone-C044004 daemon.info avahi-daemon[523]: New relevant interface eth0.IPv6 for mDNS.
+Jan  1 00:00:10 BebopDrone-C044004 daemon.info avahi-daemon[523]: Joining mDNS multicast group on interface eth0.IPv4 with address 192.168.42.1.
+Jan  1 00:00:10 BebopDrone-C044004 daemon.info avahi-daemon[523]: New relevant interface eth0.IPv4 for mDNS.
+Jan  1 00:00:10 BebopDrone-C044004 daemon.info avahi-daemon[523]: Network interface enumeration completed.
+Jan  1 00:00:10 BebopDrone-C044004 daemon.info avahi-daemon[523]: Registering new address record for fe80::a214:3dff:fe66:e301 on eth0.IPv6.
+Jan  1 00:00:10 BebopDrone-C044004 daemon.info avahi-daemon[523]: Registering new address record for 192.168.42.1 on eth0.*.
+Jan  1 00:00:10 BebopDrone-C044004 daemon.info avahi-daemon[523]: Registering HINFO record with values 'ARMV7L'/'LINUX'.
+Jan  1 00:00:10 BebopDrone-C044004 user.info rcS_gpu: rcS gpu init script...
+Jan  1 00:00:11 BebopDrone-C044004 user.info rcS_gpu: rcS gpu init script done
+Jan  1 00:00:11 BebopDrone-C044004 user.info rcS: Change spi1 thread priority to real time
+Jan  1 00:00:11 BebopDrone-C044004 user.info rcS: pid 418's current scheduling policy: SCHED_OTHER
+Jan  1 00:00:11 BebopDrone-C044004 user.info rcS: pid 418's current scheduling priority: 0
+Jan  1 00:00:11 BebopDrone-C044004 user.info rcS: pid 418's new scheduling policy: SCHED_FIFO
+Jan  1 00:00:11 BebopDrone-C044004 user.info rcS: pid 418's new scheduling priority: 99
+Jan  1 00:00:11 BebopDrone-C044004 user.info Debug: Debug files go into archive /data/ftp/internal_000/Debug/archive/debug_28.tar.gz
+Jan  1 00:00:11 BebopDrone-C044004 user.info Debug: Setting debug
+Jan  1 00:00:11 BebopDrone-C044004 user.info Debug: CKCM traces go into file /data/ftp/internal_000/Debug/current/ckcm/ckcm.bin
+Jan  1 00:00:11 BebopDrone-C044004 user.info Debug: Redirecting syslog messages to CKCM
+Jan  1 00:00:11 BebopDrone-C044004 user.info Debug: Debug is set
+Jan  1 00:00:11 BebopDrone-C044004 user.info rcS: Check Update
+Jan  1 00:00:11 BebopDrone-C044004 user.info rcS: Stop music
+Jan  1 00:00:11 BebopDrone-C044004 user.info rcS: Process Update
+Jan  1 00:00:11 BebopDrone-C044004 daemon.info avahi-daemon[523]: Server startup complete. Host name is BebopDrone-C044004.local. Local service cookie is 1721592562.
+Jan  1 00:00:11 BebopDrone-C044004 user.info rcS_eeprom: Check the content of the camera EEPROM
+Jan  1 00:00:11 BebopDrone-C044004 user.info rcS_eeprom: Camera EEPROM header OK - checking whole content
+Jan  1 00:00:12 BebopDrone-C044004 user.info rcS: Launching Dragon
+Jan  1 00:00:12 BebopDrone-C044004 user.info Debug: Activate coredump...
+Jan  1 00:00:12 BebopDrone-C044004 user.info Debug: Core pattern: /data/ftp/internal_000/Debug/current/cores/%e.%p
+Jan  1 00:00:12 BebopDrone-C044004 user.info Dragon: Exec :  //usr/bin/dragon-prog 
+Jan  1 00:00:12 BebopDrone-C044004 user.info Dragon: (output send to /dev/null)
+Jan  1 00:00:13 BebopDrone-C044004 user.info rcS: rcS init script done
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: klogd started: BusyBox v1.20.2 (2015-03-06 16:30:53 CET)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.000000] Booting Linux on physical CPU 0
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.000000] Initializing cgroup subsys cpu
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.000000] Linux version 3.4.11 (marjoriecoulin@FR-B-200-147) (gcc version 4.6.3 (Sourcery CodeBench Lite 2012.03-57) ) #1 SMP PREEMPT Fri Mar 6 16:30:11 CET 2015
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    0.000000] CPU: ARMv7 Processor [412fc097] revision 7 (ARMv7), cr=10c53c7d
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    0.000000] CPU: PIPT / VIPT nonaliasing data cache, VIPT aliasing instruction cache
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    0.000000] Machine: Mykonos3 board
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.000000] P7 per device DMA memory regions:
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.000000] 	95000000:9fffffff: hx280-venc.0
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    0.000000] Memory policy: ECC disabled, Data cache writealloc
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.000000] On node 0 totalpages: 86016
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.000000] free_area_init_node: node 0, pgdat c05e8a00, node_mem_map c0672000
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.000000]   Normal zone: 1152 pages used for memmap
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.000000]   Normal zone: 0 pages reserved
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.000000]   Normal zone: 84864 pages, LIFO batch:15
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.000000] PERCPU: Embedded 7 pages/cpu @c0af7000 s6016 r8192 d14464 u32768
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.000000] pcpu-alloc: s6016 r8192 d14464 u32768 alloc=8*4096
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.000000] pcpu-alloc: [0] 0 [0] 1 
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    0.000000] Built 1 zonelists in Zone order, mobility grouping on.  Total pages: 84864
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.000000] Kernel command line: mtdparts=nand0:8M(Pbootloader),16M(Pmain_boot),8M(Pfactory),50M(Psystem),46M(Pupdate) console=ttyPA0,115200 loglevel=8 ubi.mtd=Pfactory ubi.mtd=Psystem ubi.mtd=Pupdate root=ubi1:system rootfs
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.000000] PID hash table entries: 2048 (order: 1, 8192 bytes)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.000000] Dentry cache hash table entries: 65536 (order: 6, 262144 bytes)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.000000] Inode-cache hash table entries: 32768 (order: 5, 131072 bytes)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.000000] Memory: 336MB = 336MB total
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.000000] Memory: 332348k/332348k available, 191940k reserved, 0K highmem
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.000000] Virtual kernel memory layout:
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.000000]     vector  : 0xffff0000 - 0xffff1000   (   4 kB)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.000000]     fixmap  : 0xfff00000 - 0xfffe0000   ( 896 kB)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.000000]     vmalloc : 0xe0800000 - 0xff000000   ( 488 MB)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.000000]     lowmem  : 0xc0000000 - 0xe0000000   ( 512 MB)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.000000]     modules : 0xbf000000 - 0xc0000000   (  16 MB)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.000000]       .text : 0xc0008000 - 0xc058b678   (5646 kB)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.000000]       .init : 0xc058c000 - 0xc05b1780   ( 150 kB)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.000000]       .data : 0xc05b2000 - 0xc05e94e0   ( 222 kB)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.000000]        .bss : 0xc05e9504 - 0xc0671488   ( 544 kB)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.000000] Preemptible hierarchical RCU implementation.
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.000000] 	Additional per-CPU info printed with stalls.
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.000000] NR_IRQS:180
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.000000] p7: IRQ setup
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.000000] p7: tick setup
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.000000] p7: found Parrot7 chip v3 [0x50373032]
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.000000] sched_clock: 32 bits at 390MHz, resolution 2ns, wraps every 11012ms
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.000000] Console: colour dummy device 80x30
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.150032] Calibrating delay using timer specific routine.. 1561.67 BogoMIPS (lpj=7808398)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.150058] pid_max: default: 32768 minimum: 301
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.150694] Mount-cache hash table entries: 512
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.151999] CPU: Testing write buffer coherency: ok
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.152508] CPU0: thread -1, cpu 0, socket 0, mpidr 80000000
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.152601] hw perfevents: enabled with ARMv7 Cortex-A9 PMU driver, 7 counters available
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.152783] Setting up static identity map for 0x8041dd98 - 0x8041ddcc
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.152796] p7: powering built-in self test off
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.152811] p7: setting L2C latencies to tag=00000020 data=00000020.
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.152829] L310 cache controller enabled
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.152840] l2x0: 16 ways, CACHE_ID 0x410004c5, AUX_CTRL 0x72450801, Cache size: 524288 B
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    0.253041] CPU1: Booted secondary processor
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.402560] CPU1: thread -1, cpu 1, socket 0, mpidr 80000001
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.402714] Brought up 2 CPUs
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.402728] SMP: Total of 2 processors activated (3121.70 BogoMIPS).
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.403538] devtmpfs: initialized
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.407906] pinctrl core: initialized pinctrl subsystem
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.408133] dummy: 
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.408460] NET: Registered protocol family 16
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.409051] p7: machine setup
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.409173] p7: registering p7-pinctrl.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.409505] p7-pinctrl p7-pinctrl.0: loaded
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.409523] p7: registering user_gpio.-1...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.409570] p7: registering pl330-dma.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.409623] amba pl330-dma.0: mapped microcode memory region [00100000:00101fff]
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.409635] p7: registering p7-gpio.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.409785] gpiochip_add: registered GPIOs 0 to 219 on device: p7-gpio
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.409804] p7-gpio p7-gpio.0: GPIO driver initialized
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.409819] Reading gp 138
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.409838] p7: config pin 138 (ETH_RGMII_TXC__GPIO_138)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.409879]   > 1
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.409889] Reading gp 139
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.409901] p7: config pin 139 (ETH_RGMII_TXD_00__GPIO_139)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.409929]   > 1
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.409936] Reading gp 140
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.409946] p7: config pin 140 (ETH_RGMII_TXD_01__GPIO_140)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.409972]   > 1
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.409979] **************** HARDWARE HW 10 ***********************
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.409988] ****************   PCB REV 07   ***********************
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.410566] p7: registering p7-i2cm.0 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.410577] p7:	install I2C_0_CLK I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.410585] p7:	install I2C_0_CLK__GPIO_064__I2C_0_SL_CLK I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.410594] p7:	install I2C_0_DAT I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.410601] p7:	install I2C_0_DAT__GPIO_063__I2C_0_SL_DAT I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.410613] p7: registering p7-i2cm.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.410832] p7-i2cm p7-i2cm.0: controller probe successfully
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.410854] p7: registering p7-i2cm.1 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.410863] p7:	install I2C_1_CLK I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.410870] p7:	install I2C_1_CLK__GPIO_062__I2C_1_SL_CLK I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.410879] p7:	install I2C_1_DAT I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.410886] p7:	install I2C_1_DAT__GPIO_061__I2C_1_SL_DAT I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.410898] p7: registering p7-i2cm.1...
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.411142] p7-i2cm p7-i2cm.1: controller probe successfully
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.411312] p7: registering p7mu 0-0031...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.411325] p7: registering 0-0031 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.411333] p7:	install REBOOT_P7MU I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.413306] gpiochip_add: registered GPIOs 220 to 224 on device: p7mu-gpio
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.413544] p7mu 0-0031: attached device v2 to I2C bus p7-i2cm.0
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413562] p7: registering px-uart.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413609] p7: registering px-uart.0 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413619] p7:	install UART_0_RX I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413627] p7:	install UART_0_RX__GPIO_055 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413634] p7:	install UART_0_TX I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413642] p7:	install UART_0_TX__GPIO_056 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413649] p7:	install UART_0_RTS I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413657] p7:	install UART_0_RTS__GPIO_057 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413665] p7:	install UART_0_CTS I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413672] p7:	install UART_0_CTS__GPIO_058 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.413684] hw_info : uart 0 rts/cts 1
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413852] p7: registering cast-nand.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413923] p7: registering cast-nand.0 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413932] p7:	install NAND_NCE I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413940] p7:	install NAND_NCE__GPIO_027__SPI_00a I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413949] p7:	install NAND_NR I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413956] p7:	install NAND_NR__GPIO_028__SPI_01a I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413964] p7:	install NAND_NW I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413971] p7:	install NAND_NW__GPIO_029__SPI_02a I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413979] p7:	install NAND_AL I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413986] p7:	install NAND_AL__GPIO_030__SPI_03a I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.413994] p7:	install NAND_CL I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414001] p7:	install NAND_CL__GPIO_031__SPI_04a I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414009] p7:	install NAND_RNB I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414016] p7:	install NAND_RNB__GPIO_032__SPI_05a I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414024] p7:	install NAND_DATA_00 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414031] p7:	install NAND_DATA_00__GPIO_034__SPI_06a I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414040] p7:	install NAND_DATA_01 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414047] p7:	install NAND_DATA_01__GPIO_035__SPI_07a I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414055] p7:	install NAND_DATA_02 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414062] p7:	install NAND_DATA_02__GPIO_036__SPI_08a I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414071] p7:	install NAND_DATA_03 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414078] p7:	install NAND_DATA_03__GPIO_037__SPI_09a I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414086] p7:	install NAND_DATA_04 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414094] p7:	install NAND_DATA_04__GPIO_038 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414102] p7:	install NAND_DATA_05 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414109] p7:	install NAND_DATA_05__GPIO_039 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414116] p7:	install NAND_DATA_06 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414124] p7:	install NAND_DATA_06__GPIO_040 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414131] p7:	install NAND_DATA_07 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414138] p7:	install NAND_DATA_07__GPIO_041 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414146] p7:	install NAND_DQS I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414153] p7:	install NAND_DQS__GPIO_033__CAN1_RXa I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414178] p7: registering p7-i2cm.2 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414185] p7:	install I2C_2_CLK I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414193] p7:	install I2C_2_CLK__GPIO_060__I2C_2_SL_CLK I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414201] p7:	install I2C_2_DAT I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414209] p7:	install I2C_2_DAT__GPIO_059__I2C_2_SL_DAT I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414219] p7: registering p7-i2cm.2...
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.414527] p7-i2cm p7-i2cm.2: controller probe successfully
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414550] p7: registering p7_pwm.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414627] p7: registering p7_pwm.0 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414636] p7:	install PWM_11 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414644] p7:	install AAI_11__GPIO_130__PWM_11 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414652] p7:	install PWM_08 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414659] p7:	install PWM_09 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414667] p7:	install AAI_09__GPIO_128__PWM_09 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414675] p7:	install PWM_06 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414709] p7: registering switch-voltage.4...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414754] p7: registering acs3-sdhci.1...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414795] p7: registering acs3-sdhci.1 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414803] p7:	install SD_1_CLK I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414811] p7:	install SD_1_CLK__GPIO_015__UART_5_TX I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414820] p7:	install SD_1_CMD I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414827] p7:	install SD_1_CMD__GPIO_016__UART_5_RX I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414835] p7:	install SD_1_DAT00 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414843] p7:	install SD_1_DAT00__GPIO_017__UART_6_TX I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414851] p7:	install SD_1_DAT01 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414859] p7:	install SD_1_DAT01__GPIO_019__UART_6_RX I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414867] p7:	install SD_1_DAT02 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414874] p7:	install SD_1_DAT02__GPIO_018__UART_7_TX I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414882] p7:	install SD_1_DAT03 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414890] p7:	install SD_1_DAT03__GPIO_020__UART_7_RX I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414903] p7: registering p7-spi.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414942] p7: registering p7-spim.1...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414980] p7: registering p7-spim.1 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414989] p7:	install SPI_15 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.414999] p7: registering spidev slave as spi1.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415010] p7: registering p7-spis.3...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415073] p7: registering p7-spis.3 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415082] p7:	install SPI_13b I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415090] p7:	install SPI_12b I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415097] p7:	install SPI_14b I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415107] p7: registering p7mu-adc master as spi3.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415117] p7: registering p7-temperature I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415124] p7:	install GPIO_049 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415131] p7:	install GPIO_049 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415138] p7:	install GPIO_050 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415145] p7:	install GPIO_050 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415154] p7: registering p7-temperature I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415161] p7:	install GPIO_049 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415168] p7:	install GPIO_049 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415175] p7:	install GPIO_050 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415182] p7:	install GPIO_050 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415223] p7: registering avi.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415262] p7: registering avicam.2...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415297] p7: registering avicam.2 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415306] p7:	install CAM_2_CLK I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415313] p7:	install CAM_2_DATA00 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415321] p7:	install CAM_2_DATA01 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415329] p7:	install CAM_2_DATA02 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415336] p7:	install CAM_2_DATA03 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415343] p7:	install CAM_2_DATA04 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415351] p7:	install CAM_2_DATA05 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415358] p7:	install CAM_2_DATA06 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415366] p7:	install CAM_2_DATA07 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415376] p7: registering avicam.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415412] p7: registering avicam.0 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415420] p7:	install CAM_0_CLK I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415428] p7:	install CAM_0_HS I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415436] p7:	install CAM_0_VS I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415443] p7:	install CAM_0_DATA08 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415451] p7:	install CAM_0_DATA09 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415458] p7:	install CAM_0_DATA10 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415465] p7:	install CAM_0_DATA11 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415473] p7:	install CAM_0_DATA12 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415480] p7:	install CAM_0_DATA13 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415487] p7:	install CAM_0_DATA14 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415494] p7:	install CAM_0_DATA15 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415501] p7:	install CAM_0_DATA16 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415509] p7:	install CAM_0_DATA17 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415516] p7:	install CAM_0_DATA18 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415523] p7:	install CAM_0_DATA19 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415533] p7: registering avi_r2r.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415594] p7: registering avi_m2m.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.415683] P7 GPU device PM registered.
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.415726] Mali400 GPU registered.
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415735] p7: registering px-uart.1...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415773] p7: registering px-uart.1 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415782] p7:	install UART_1_RX I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415790] p7:	install UART_1_RX__GPIO_051 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415797] p7:	install UART_1_TX I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415805] p7:	install UART_1_TX__GPIO_052 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415812] p7:	install UART_1_RTS I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415819] p7:	install UART_1_RTS__GPIO_053__CAN0_RXb I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415828] p7:	install UART_1_CTS I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415835] p7:	install UART_1_CTS__GPIO_054__CAN0_TXb I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.415846] hw_info : uart 1 rts/cts 1
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.415956] p7: registering ci_hdrc.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416000] p7: registering ci_hdrc.0 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416009] p7:	install ULPI_0_DATA00 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416017] p7:	install ULPI_0_DATA00__GPIO_095 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416026] p7:	install ULPI_0_DATA01 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416033] p7:	install ULPI_0_DATA01__GPIO_096 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416041] p7:	install ULPI_0_DATA02 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416048] p7:	install ULPI_0_DATA02__GPIO_097 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416056] p7:	install ULPI_0_DATA03 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416064] p7:	install ULPI_0_DATA03__GPIO_098 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416071] p7:	install ULPI_0_DATA04 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416079] p7:	install ULPI_0_DATA04__GPIO_099 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416087] p7:	install ULPI_0_DATA05 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416094] p7:	install ULPI_0_DATA05__GPIO_100 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416102] p7:	install ULPI_0_DATA06 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416109] p7:	install ULPI_0_DATA06__GPIO_101 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416117] p7:	install ULPI_0_DATA07 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416124] p7:	install ULPI_0_DATA07__GPIO_102 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416131] p7:	install ULPI_0_NXT I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416139] p7:	install ULPI_0_NXT__GPIO_103 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416146] p7:	install ULPI_0_STP I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416154] p7:	install ULPI_0_STP__GPIO_117 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416161] p7:	install ULPI_0_DIR I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416169] p7:	install ULPI_0_DIR__GPIO_104 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416176] p7:	install ULPI_0_CLK I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416183] p7:	install ULPI_0_CLK__GPIO_105 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416196] p7: registering ci_hdrc.1...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416261] p7: registering ci_hdrc.1 I/O pins...
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416270] p7:	install ULPI_1_DATA00 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416278] p7:	install ULPI_1_DATA00__GPIO_106__I2C_2_CLKa I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416286] p7:	install ULPI_1_DATA01 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416294] p7:	install ULPI_1_DATA01__GPIO_107__I2C_2_DATa I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416302] p7:	install ULPI_1_DATA02 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416310] p7:	install ULPI_1_DATA02__GPIO_108__I2C_2_CLKb I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416318] p7:	install ULPI_1_DATA03 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416326] p7:	install ULPI_1_DATA03__GPIO_109__I2C_2_DATb I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416334] p7:	install ULPI_1_DATA04 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416342] p7:	install ULPI_1_DATA04__GPIO_110__I2C_2_CLKc I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416350] p7:	install ULPI_1_DATA05 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416357] p7:	install ULPI_1_DATA05__GPIO_111__I2C_2_DATc I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416366] p7:	install ULPI_1_DATA06 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416373] p7:	install ULPI_1_DATA06__GPIO_112__I2C_2_CLKd I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416381] p7:	install ULPI_1_DATA07 I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416389] p7:	install ULPI_1_DATA07__GPIO_113__I2C_2_DATd I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416397] p7:	install ULPI_1_NXT I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416405] p7:	install ULPI_1_NXT__GPIO_114__I2C_2_CLKe I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416413] p7:	install ULPI_1_STP I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416421] p7:	install ULPI_1_STP__GPIO_116__I2C_2_DATe I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416429] p7:	install ULPI_1_DIR I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416436] p7:	install ULPI_1_DIR__GPIO_115 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416443] p7:	install ULPI_1_CLK I/O pin function
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416451] p7:	install ULPI_1_CLK__GPIO_118 I/O pin settings
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416484] p7: registering hx280-venc.0...
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.416568] hw_info : i2c-1 device 0x0D : ak8963 ()
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416679] p7: registering ak8963 1-000d...
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.416732] hw_info : i2c-1 device 0x77 : ms5607 ()
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.416858] p7: registering ms5607 1-0077...
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.416908] hw_info : i2c-2 device 0x68 : mpu6050 ()
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    0.417008] p7: registering mpu6050 2-0068...
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.417055] hw_info : i2c-0 device 0x10 : mt9f002 ()
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.417153] hw_info : i2c-0 device 0x5D : mt9v117 ()
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.417251] hw_info : i2c-1 device 0x08 : BLDC ()
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.417395] Mykonos3 board : exporting HSIS to userspace in /sys/kernel/hsis
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.422655] hx280-venc.0 video memory [95000000:9fffffff]
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.422666] Mykonos3 board : init done
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.422695] hw-breakpoint: found 5 (+1 reserved) breakpoint and 1 watchpoint registers.
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.422707] hw-breakpoint: maximum watchpoint size is 4 bytes.
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.426525] bio: create slab <bio-0> at 0
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.427716] SCSI subsystem initialized
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.427858] usbcore: registered new interface driver usbfs
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.427947] usbcore: registered new interface driver hub
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.428110] usbcore: registered new device driver usb
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.428233] Linux media interface: v0.10
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.428270] Linux video capture interface: v2.00
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.428407] sdhci1_bus_vdd: 3300 mV 
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.429033] Switching to clocksource timer2
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.436870] NET: Registered protocol family 2
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.437228] IP route cache hash table entries: 4096 (order: 2, 16384 bytes)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.438293] TCP established hash table entries: 16384 (order: 5, 131072 bytes)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.439656] TCP bind hash table entries: 16384 (order: 5, 196608 bytes)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.439934] TCP: Hash tables configured (established 16384 bind 16384)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.439945] TCP: reno registered
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.439998] UDP hash table entries: 256 (order: 1, 8192 bytes)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.440058] UDP-Lite hash table entries: 256 (order: 1, 8192 bytes)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.440392] NET: Registered protocol family 1
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.441089] RPC: Registered named UNIX socket transport module.
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.441102] RPC: Registered udp transport module.
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.441109] RPC: Registered tcp transport module.
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.441117] RPC: Registered tcp NFSv4.1 backchannel transport module.
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.524598] NFS: Registering the id_resolver key type
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.526227] msgmni has been set to 649
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.527807] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 244)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.527823] io scheduler noop registered
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.527832] io scheduler deadline registered
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.527960] io scheduler cfq registered (default)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.527968] start plist test
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.531701] end plist test
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.532728] cast-nand cast-nand.0: DMA mode enabled
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.532879] cast-nand cast-nand.0: pll_nand: 253500000Hz (wanted=256000000Hz mode=0)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.533198] cast-nand cast-nand.0: nand is benand
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.533238] NAND device: Manufacturer ID: 0x98, Chip ID: 0xa1 (Toshiba NAND 128MiB 1,8V 8-bit)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.533258] Scanning device for bad blocks
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    0.640287] Bad eraseblock 768 at 0x000006000000
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.675801] 5 cmdlinepart partitions found on MTD device nand0
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.675813] Creating 5 MTD partitions on "nand0":
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.675826] 0x000000000000-0x000000800000 : "Pbootloader"
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.676167] 0x000000800000-0x000001800000 : "Pmain_boot"
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.676427] 0x000001800000-0x000002000000 : "Pfactory"
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.676672] 0x000002000000-0x000005200000 : "Psystem"
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.676939] 0x000005200000-0x000008000000 : "Pupdate"
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    0.677326] cast-nand cast-nand.0: pll_nand: 399750000Hz (wanted=400000000Hz mode=4)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.677645] UBI: attaching mtd2 to ubi0
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.677657] UBI: physical eraseblock size:   131072 bytes (128 KiB)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.677665] UBI: logical eraseblock size:    126976 bytes
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.677673] UBI: smallest flash I/O unit:    2048
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.677681] UBI: VID header offset:          2048 (aligned 2048)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.677689] UBI: data offset:                4096
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.712012] UBI: max. sequence number:       148
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717828] UBI: attached mtd2 to ubi0
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717838] UBI: MTD device name:            "Pfactory"
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717846] UBI: MTD device size:            8 MiB
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717854] UBI: number of good PEBs:        64
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717861] UBI: number of bad PEBs:         0
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717868] UBI: number of corrupted PEBs:   0
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717875] UBI: max. allowed volumes:       128
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717882] UBI: wear-leveling threshold:    4096
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717889] UBI: number of internal volumes: 1
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717895] UBI: number of user volumes:     1
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717902] UBI: available PEBs:             0
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717908] UBI: total number of reserved PEBs: 64
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717915] UBI: number of PEBs reserved for bad PEB handling: 2
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717923] UBI: max/mean erase counter: 5/4
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717930] UBI: image sequence number:  1131427700
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717953] UBI: background thread "ubi_bgt0d" started, PID 37
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717963] UBI: attaching mtd3 to ubi1
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717970] UBI: physical eraseblock size:   131072 bytes (128 KiB)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717977] UBI: logical eraseblock size:    126976 bytes
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717983] UBI: smallest flash I/O unit:    2048
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717989] UBI: VID header offset:          2048 (aligned 2048)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.717995] UBI: data offset:                4096
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.897251] UBI: max. sequence number:       998
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903407] UBI: attached mtd3 to ubi1
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903417] UBI: MTD device name:            "Psystem"
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903426] UBI: MTD device size:            50 MiB
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903433] UBI: number of good PEBs:        400
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903440] UBI: number of bad PEBs:         0
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903447] UBI: number of corrupted PEBs:   0
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903454] UBI: max. allowed volumes:       128
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903461] UBI: wear-leveling threshold:    4096
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903467] UBI: number of internal volumes: 1
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903474] UBI: number of user volumes:     1
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903481] UBI: available PEBs:             0
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903487] UBI: total number of reserved PEBs: 400
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903494] UBI: number of PEBs reserved for bad PEB handling: 4
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903502] UBI: max/mean erase counter: 10/6
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903509] UBI: image sequence number:  1730180899
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903536] UBI: background thread "ubi_bgt1d" started, PID 38
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903545] UBI: attaching mtd4 to ubi2
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903553] UBI: physical eraseblock size:   131072 bytes (128 KiB)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903560] UBI: logical eraseblock size:    126976 bytes
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903565] UBI: smallest flash I/O unit:    2048
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903572] UBI: VID header offset:          2048 (aligned 2048)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    0.903578] UBI: data offset:                4096
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.103000] UBI: max. sequence number:       2400
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109241] UBI: attached mtd4 to ubi2
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109251] UBI: MTD device name:            "Pupdate"
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109259] UBI: MTD device size:            46 MiB
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109267] UBI: number of good PEBs:        367
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109274] UBI: number of bad PEBs:         1
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109281] UBI: number of corrupted PEBs:   0
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109287] UBI: max. allowed volumes:       128
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109295] UBI: wear-leveling threshold:    4096
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109301] UBI: number of internal volumes: 1
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109308] UBI: number of user volumes:     2
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109315] UBI: available PEBs:             0
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109321] UBI: total number of reserved PEBs: 367
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109328] UBI: number of PEBs reserved for bad PEB handling: 3
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109337] UBI: max/mean erase counter: 11/10
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109344] UBI: image sequence number:  288382928
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    1.109368] UBI: background thread "ubi_bgt2d" started, PID 39
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.109447] usbcore: registered new interface driver asix
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.109498] usbcore: registered new interface driver cdc_ether
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.109538] usbcore: registered new interface driver net1080
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.109578] usbcore: registered new interface driver cdc_subset
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.109640] usbcore: registered new interface driver cdc_ncm
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.109650] Initializing USB Mass Storage driver...
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.109706] usbcore: registered new interface driver usb-storage
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.109714] USB Mass Storage support registered.
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.111924] ci_hdrc ci_hdrc.1: ChipIdea HDRC EHCI
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.111983] ci_hdrc ci_hdrc.1: new USB bus registered, assigned bus number 1
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.159110] ci_hdrc ci_hdrc.1: USB 2.0 started, EHCI 1.00
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.159630] hub 1-0:1.0: USB hub found
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.159653] hub 1-0:1.0: 1 port detected
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.160272] file system registered
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.161568]  gadget: Mass Storage Function, version: 2009/09/11
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.161581]  gadget: Number of LUNs=1
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.161592]  lun0: LUN: removable file: (no medium)
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    1.161803] Gadget Android: controller 'ci_pdata' not recognized
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.161822]  gadget: android_usb ready
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.161852] i2c /dev entries driver
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.162401] ulogger: created 256K log 'ulog_main'
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.162541] Serial: Parrot5/5+ UART driver $Revision: 1.19 $
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    1.162753] px-uart.0: ttyPA0 at MMIO 0x2100000 (irq = 91) is a PARROT5
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    3.440307] console [ttyPA0] enabled
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    3.444031] px-uart.1: ttyPA1 at MMIO 0x2110000 (irq = 92) is a PARROT5
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    3.450831] TCP: cubic registered
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    3.454294] NET: Registered protocol family 10
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    3.459497] NET: Registered protocol family 17
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    3.463810] Registering the dns_resolver key type
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    3.468598] VFP support v0.3: implementor 41 architecture 3 part 30 variant 9 rev 2
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    3.559661] UBIFS: mounted UBI device 1, volume 0, name "system"
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    3.565491] UBIFS: mounted read-only
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    3.569053] UBIFS: file system size:   48631808 bytes (47492 KiB, 46 MiB, 383 LEBs)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    3.576721] UBIFS: journal size:       2412544 bytes (2356 KiB, 2 MiB, 19 LEBs)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    3.583996] UBIFS: media format:       w4/r0 (latest is w4/r0)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    3.589809] UBIFS: default compressor: none
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    3.593965] UBIFS: reserved for root:  2297000 bytes (2243 KiB)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    3.600893] VFS: Mounted root (ubifs filesystem) readonly on device 0:11.
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    3.607695] Freeing init memory: 148K
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    3.659175] usb 1-1: new high-speed USB device number 2 using ci_hdrc
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    5.945187] p7-i2cm p7-i2cm.1: protocol error : SCL 2004
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    5.945205] p7-i2cm p7-i2cm.1: debug cmd : SDA(SB1) SCL(SB1P70) 6a0a
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    5.945216] p7-i2cm p7-i2cm.1: irq after transfert end, status 12004
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.746928] UBIFS: mounted UBI device 0, volume 0, name "factory"
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.746945] UBIFS: file system size:   6221824 bytes (6076 KiB, 5 MiB, 49 LEBs)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.746957] UBIFS: journal size:       1015809 bytes (992 KiB, 0 MiB, 6 LEBs)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.746968] UBIFS: media format:       w4/r0 (latest is w4/r0)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.746977] UBIFS: default compressor: none
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.746985] UBIFS: reserved for root:  293871 bytes (286 KiB)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.836469] UBIFS: mounted UBI device 2, volume 1, name "data"
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.836484] UBIFS: file system size:   10919936 bytes (10664 KiB, 10 MiB, 86 LEBs)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.836496] UBIFS: journal size:       1015809 bytes (992 KiB, 0 MiB, 6 LEBs)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.836507] UBIFS: media format:       w4/r0 (latest is w4/r0)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.836516] UBIFS: default compressor: none
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.836524] UBIFS: reserved for root:  515774 bytes (503 KiB)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.923697] UBIFS: mounted UBI device 2, volume 0, name "update"
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.923713] UBIFS: file system size:   32505856 bytes (31744 KiB, 31 MiB, 256 LEBs)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.923725] UBIFS: journal size:       1650688 bytes (1612 KiB, 1 MiB, 13 LEBs)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.923735] UBIFS: media format:       w4/r0 (latest is w4/r0)
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.923744] UBIFS: default compressor: none
+Jan  1 00:00:13 BebopDrone-C044004 user.notice kernel: [    6.923752] UBIFS: reserved for root:  1535331 bytes (1499 KiB)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    7.126737] udev[201]: starting version 164
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    7.317013] Inserting bcm_dbus module 
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    7.496583] wl: module license 'Proprietary' taints kernel.
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    7.496601] Disabling lock debugging due to kernel taint
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    7.980157] bcm_rpc_up: waiting to be connected
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    7.985555] bcm_rpc_buf_recv_mgn_high: Recvd:3 Version: 0x6257234
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    7.985561] State: 3 Session:105
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    7.985572] bcm_rpc_buf_recv_mgn_high: Reason: 0 Dongle Version: 0x6257234
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    7.985581] bcm_rpc_buf_recv_mgn_high: Connected!
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    8.000348] eth0: Broadcom BCMaa06 802.11 Wireless Controller 6.37.114.52 (r478150)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    8.000486] usbcore: registered new interface driver dbus_usbdev
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    8.715053] *** wlc_enable_mac(): Changing band 2 slot time from 20 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    8.716283] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    8.834809] *** wlc_enable_mac(): Changing band 2 slot time from 20 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    8.836032] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    8.891163] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    8.901288] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    9.010788] *** wlc_enable_mac(): Changing band 1 slot time from 9 to 25 (band default 9)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    9.012033] *** wlc_enable_mac(): Changing band 1 slot time from 25 to 25 (band default 9)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    9.095912] *** wlc_enable_mac(): Changing band 2 slot time from 20 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    9.097157] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    9.131166] *** wlc_enable_mac(): Changing band 2 slot time from 9 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    9.135409] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    9.140159] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    9.144408] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    9.148657] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    9.215911] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    9.219533] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.627410] sdhci: Secure Digital Host Controller Interface driver
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.627424] sdhci: Copyright(c) Pierre Ossman
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.633362] mmc0: no vmmc regulator found
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [    9.633821] Registered led device: mmc0::
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.719127] mmc0: SDHCI controller on acs3-sdhci [acs3-sdhci.1] using ADMA
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.740600] usbcore: registered new interface driver rndis_host
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.771445] dma-pl330 pl330-dma.0: Loaded driver for PL330 DMAC-267056
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.771464] dma-pl330 pl330-dma.0: 	DBUFF-64x8bytes Num_Chans-6 Num_Peri-7 Num_Events-6
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.797421] p7mu-rtc p7mu-rtc: rtc core: registered p7mu-rtc as rtc0
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    9.818534] UMP: UMP device driver -v2.6.27-195016-gc1a3119 loaded
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.829688] hx280-venc hx280-venc.0: found hx280 video encoder (0x48313610).
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.874496] avi avi.0: Found AVI revision 3
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.878565] avi avi.0: AVI core driver initialized
+Jan  1 00:00:13 BebopDrone-C044004 user.err kernel: [    9.904245] avicam_dummy_dev avicam_dummy_dev.1: entity intialized, dummy
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.904289] avicam avicam.2: video device successfuly registered as video0
+Jan  1 00:00:13 BebopDrone-C044004 user.err kernel: [    9.911025] avicam_dummy_dev avicam_dummy_dev.0: entity intialized, dummy
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.911320] avicam avicam.0: stats video device successfuly registered as video2
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.911335] avicam avicam.0: video device successfuly registered as video1
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.911445] registering avicam V4L2 subdevice nodes.
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.954155] avi_r2r avi_r2r.0: DebugFS enabled
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.954819] avi_r2r avi_r2r.0: Found 3 channels
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.954833] avi_r2r avi_r2r.0: Channel #0: r2r.0
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.954843] avi_r2r avi_r2r.0: Channel #1: r2r.1
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.954852] avi_r2r avi_r2r.0: Channel #2: r2r.2
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.954976] avi_r2r Initialized
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.961953] avi_m2m avi_m2m.0: V4L2 device registered as video3
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.962104] avi_m2m avi_m2m.0: V4L2 device registered as video4
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.962246] avi_m2m avi_m2m.0: V4L2 device registered as video5
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.969569] mmc0: new high speed DDR MMC card at address 0001
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.971366] mmcblk0: mmc0:0001 008GE0 7.28 GiB 
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.971727] mmcblk0boot0: mmc0:0001 008GE0 partition 1 4.00 MiB
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.972018] mmcblk0boot1: mmc0:0001 008GE0 partition 2 4.00 MiB
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.973452]  mmcblk0: unknown partition table
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.976699]  mmcblk0boot1: unknown partition table
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.980080]  mmcblk0boot0: unknown partition table
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    9.982286] industrialio: module is from the staging directory, the quality is unknown, you have been warned.
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [    9.986294] ring_sw: module is from the staging directory, the quality is unknown, you have been warned.
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.994408] p7-spi p7-spi.0: Loaded SPI revision 3
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.999692] p7-spis p7-spis.3: master is unqueued, this is deprecated
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.999797] spi_master spi3: enabled device spi3.0 on slave core:
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.999802] 	half duplex/read/write
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.999806] 	mode: single
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.999809] 	clock: polarity=0 phase=0
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.999812] 	fifo: 32B/64B
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.999815] 	buffer: [d3a9e800] 1152B (9 periods)
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [    9.999982] p7-spis p7-spis.3: core 3 ready
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.007921] p7mu-adc p7mu-adc: P7MU ADC - ready
+Jan  1 00:00:13 BebopDrone-C044004 user.err kernel: [   10.008286] P7MU SPI frequency corected to: 12000000 MHz 
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.020118] p7-temperature p7-temperature: p7-temperature temperature sensor and ADC registered.
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.032216] spi_master spi1: bus clock frequency set to 10000000Hz
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.032239] spi_master spi1: enabled device spi1.0 on master core:
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.032243] 	full duplex/no read/write
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.032247] 	mode: single
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.032250] 	clock: polarity=0 phase=0
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.032253] 	fifo: 48B/64B
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.032348] p7-spim p7-spim.1: core 1 ready
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.436521] EXT4-fs (mmcblk0): mounted filesystem with ordered data mode. Opts: discard,errors=continue,barrier=1
+Jan  1 00:00:13 BebopDrone-C044004 user.err kernel: [   10.740935] android_usb: already disabled
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.747698] mtp_bind_config
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.800376] android_work: did not send uevent (0 0   (null))
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.800423] ci_hdrc ci_hdrc.0: ChipIdea HDRC EHCI
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.800448] ci_hdrc ci_hdrc.0: new USB bus registered, assigned bus number 2
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.849156] ci_hdrc ci_hdrc.0: USB 2.0 started, EHCI 1.00
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.849890] hub 2-0:1.0: USB hub found
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.849920] hub 2-0:1.0: 1 port detected
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   10.985784] Parrot7 GPU clocks started
+Jan  1 00:00:13 BebopDrone-C044004 user.warn kernel: [   11.036168] Mali: Mali device driver loaded
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   11.081953] fb0: Virtual frame buffer device, using 1024K of video memory
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.214953] spi_master spi1: bus clock frequency set to 10000000Hz
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.214977] spi_master spi1: enabled device spi1.0 on master core:
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.214981] 	full duplex/no read/write
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.214985] 	mode: single
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.214987] 	clock: polarity=0 phase=0
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.214991] 	fifo: 48B/64B
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.215007] spi_master spi1: bus clock frequency set to 10000000Hz
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.215023] spi_master spi1: enabled device spi1.0 on master core:
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.215027] 	full duplex/no read/write
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.215030] 	mode: single
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.215033] 	clock: polarity=0 phase=0
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.215036] 	fifo: 48B/64B
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.215050] spi_master spi1: bus clock frequency set to 319410Hz
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.215065] spi_master spi1: enabled device spi1.0 on master core:
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.215070] 	full duplex/no read/write
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.215073] 	mode: single
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.215075] 	clock: polarity=0 phase=0
+Jan  1 00:00:13 BebopDrone-C044004 user.info kernel: [   13.215078] 	fifo: 48B/64B
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.356625] P7UMP: Adding map 0x95000000 sz 27197440
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.474829] P7UMP: Adding map 0x97000000 sz 20398080
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.475455] P7UMP: Adding map 0x99000000 sz 262144
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.501099] P7UMP: Adding map 0x99800000 sz 4460544
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.509478] P7UMP: Adding map 0x9a000000 sz 4460544
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.518574] P7UMP: Adding map 0x9a800000 sz 4460544
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.526796] P7UMP: Adding map 0x9b000000 sz 4460544
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.534748] P7UMP: Adding map 0x9b800000 sz 4460544
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.543328] P7UMP: Adding map 0x9c000000 sz 4460544
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.550101] P7UMP: Adding map 0x99400000 sz 3133440
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.550955] P7UMP: Adding map 0x99040000 sz 77824
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.551153] P7UMP: Adding map 0x99060000 sz 77824
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.551327] P7UMP: Adding map 0x99080000 sz 77824
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.551518] P7UMP: Adding map 0x990a0000 sz 77824
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.551690] P7UMP: Adding map 0x990c0000 sz 77824
+Jan  1 00:00:13 BebopDrone-C044004 user.debug kernel: [   13.551881] P7UMP: Adding map 0x990e0000 sz 77824
+Jan  1 00:00:14 BebopDrone-C044004 user.debug kernel: [   14.622785] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:14 BebopDrone-C044004 user.debug kernel: [   14.624165] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.046707] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.050167] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.104238] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.105549] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.232752] P7UMP: Adding map 0x99200000 sz 2088960
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.237036] P7UMP: Adding map 0x9c800000 sz 2088960
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.240053] P7UMP: Adding map 0x99100000 sz 1044480
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.242549] P7UMP: Adding map 0x9ca00000 sz 1044480
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.243983] P7UMP: Adding map 0x9cb00000 sz 4096
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.244327] P7UMP: Adding map 0x9cb10000 sz 49152
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.244979] P7UMP: Adding map 0x9cb80000 sz 327680
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.247794] P7UMP: Adding map 0x9cb01000 sz 4096
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.254187] P7UMP: Adding map 0x9cc00000 sz 3133440
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.274937] P7UMP: Adding map 0x9d000000 sz 3133440
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.295774] P7UMP: Adding map 0x9d400000 sz 3133440
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.313035] P7UMP: Adding map 0x9d800000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.315206] P7UMP: Adding map 0x9d900000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.317242] P7UMP: Adding map 0x9da00000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.319414] P7UMP: Adding map 0x9db00000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.321524] P7UMP: Adding map 0x9dc00000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.323691] P7UMP: Adding map 0x9dd00000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.325831] P7UMP: Adding map 0x9de00000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.327901] P7UMP: Adding map 0x9df00000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.330021] P7UMP: Adding map 0x9e000000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.332216] P7UMP: Adding map 0x9e100000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.334249] P7UMP: Adding map 0x9e200000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.336380] P7UMP: Adding map 0x9e300000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.338495] P7UMP: Adding map 0x9e400000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.340577] P7UMP: Adding map 0x9e500000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.342712] P7UMP: Adding map 0x9e600000 sz 1036288
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.344048] P7UMP: Adding map 0x9cb02000 sz 4096
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.523794] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.525441] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.574789] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.577174] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.706914] P7UMP: Adding map 0x99800000 sz 4460544
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.707193] P7UMP: Adding map 0x9a000000 sz 4460544
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.707480] P7UMP: Adding map 0x9a800000 sz 4460544
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.707783] P7UMP: Adding map 0x9b000000 sz 4460544
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.708121] P7UMP: Adding map 0x9b800000 sz 4460544
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.708481] P7UMP: Adding map 0x9c000000 sz 4460544
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.822201] P7UMP: Adding map 0x9cb40000 sz 237568
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.822750] P7UMP: Adding map 0x9e700000 sz 237568
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.823014] P7UMP: Adding map 0x9cb20000 sz 118784
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.823442] P7UMP: Adding map 0x9e740000 sz 118784
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.824752] P7UMP: Adding map 0x9cb03000 sz 4096
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.824977] P7UMP: Adding map 0x9e760000 sz 49152
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.825181] P7UMP: Adding map 0x9e770000 sz 36864
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.826640] P7UMP: Adding map 0x9cb04000 sz 4096
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.827586] P7UMP: Adding map 0x9e780000 sz 356352
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.829965] P7UMP: Adding map 0x9e800000 sz 356352
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.832383] P7UMP: Adding map 0x9e880000 sz 356352
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.834681] P7UMP: Adding map 0x9e900000 sz 356352
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.836843] P7UMP: Adding map 0x9e980000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.837279] P7UMP: Adding map 0x9e9c0000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.837792] P7UMP: Adding map 0x9ea00000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.838168] P7UMP: Adding map 0x9ea40000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.838519] P7UMP: Adding map 0x9ea80000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.838967] P7UMP: Adding map 0x9eac0000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.839546] P7UMP: Adding map 0x9eb00000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.839957] P7UMP: Adding map 0x9eb40000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.840350] P7UMP: Adding map 0x9eb80000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.840820] P7UMP: Adding map 0x9ebc0000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.841273] P7UMP: Adding map 0x9ec00000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.841712] P7UMP: Adding map 0x9ec40000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.842167] P7UMP: Adding map 0x9ec80000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.842671] P7UMP: Adding map 0x9ecc0000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.843076] P7UMP: Adding map 0x9ed00000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.843519] P7UMP: Adding map 0x9ed40000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.843989] P7UMP: Adding map 0x9ed80000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.844395] P7UMP: Adding map 0x9edc0000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.844839] P7UMP: Adding map 0x9ee00000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.845224] P7UMP: Adding map 0x9ee40000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.845663] P7UMP: Adding map 0x9ee80000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.846110] P7UMP: Adding map 0x9eec0000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.846551] P7UMP: Adding map 0x9ef00000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.846984] P7UMP: Adding map 0x9ef40000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.847462] P7UMP: Adding map 0x9ef80000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.847877] P7UMP: Adding map 0x9efc0000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.848226] P7UMP: Adding map 0x9f000000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.848586] P7UMP: Adding map 0x9f040000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.849258] P7UMP: Adding map 0x9f080000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.849726] P7UMP: Adding map 0x9f0c0000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.850185] P7UMP: Adding map 0x9f100000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.850587] P7UMP: Adding map 0x9f140000 sz 176128
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.851964] P7UMP: Adding map 0x9cb05000 sz 4096
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.992792] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:15 BebopDrone-C044004 user.debug kernel: [   15.993915] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:16 BebopDrone-C044004 user.debug kernel: [   16.055271] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:16 BebopDrone-C044004 user.debug kernel: [   16.065325] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:16 BebopDrone-C044004 user.debug kernel: [   16.473038] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:16 BebopDrone-C044004 user.debug kernel: [   16.474415] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:16 BebopDrone-C044004 user.debug kernel: [   16.536094] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:16 BebopDrone-C044004 user.debug kernel: [   16.537802] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:16 BebopDrone-C044004 user.debug kernel: [   16.952786] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:16 BebopDrone-C044004 user.debug kernel: [   16.954061] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:17 BebopDrone-C044004 user.debug kernel: [   17.006588] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:17 BebopDrone-C044004 user.debug kernel: [   17.008550] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:17 BebopDrone-C044004 user.debug kernel: [   17.422926] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:17 BebopDrone-C044004 user.debug kernel: [   17.424287] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:17 BebopDrone-C044004 user.debug kernel: [   17.474550] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:17 BebopDrone-C044004 user.debug kernel: [   17.476688] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:17 BebopDrone-C044004 user.debug kernel: [   17.893668] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:17 BebopDrone-C044004 user.debug kernel: [   17.895178] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:17 BebopDrone-C044004 user.debug kernel: [   17.943290] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:17 BebopDrone-C044004 user.debug kernel: [   17.944546] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:18 BebopDrone-C044004 user.debug kernel: [   18.367542] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:18 BebopDrone-C044004 user.debug kernel: [   18.369053] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:18 BebopDrone-C044004 user.debug kernel: [   18.413080] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:18 BebopDrone-C044004 user.debug kernel: [   18.414795] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:18 BebopDrone-C044004 user.debug kernel: [   18.836666] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:18 BebopDrone-C044004 user.debug kernel: [   18.837920] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:18 BebopDrone-C044004 user.debug kernel: [   18.883289] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:18 BebopDrone-C044004 user.debug kernel: [   18.884707] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:18 BebopDrone-C044004 user.debug kernel: [   18.985039] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:18 BebopDrone-C044004 user.debug kernel: [   18.986808] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:18 BebopDrone-C044004 user.debug kernel: [   18.987412] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:18 BebopDrone-C044004 user.debug kernel: [   18.993286] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:18 BebopDrone-C044004 user.debug kernel: [   18.994580] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:19 BebopDrone-C044004 user.debug kernel: [   19.303937] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:19 BebopDrone-C044004 user.debug kernel: [   19.305160] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:19 BebopDrone-C044004 user.debug kernel: [   19.353559] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:19 BebopDrone-C044004 user.debug kernel: [   19.355291] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:19 BebopDrone-C044004 user.debug kernel: [   19.699105] eth0: no IPv6 routers present
+Jan  1 00:00:19 BebopDrone-C044004 user.debug kernel: [   19.773412] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:19 BebopDrone-C044004 user.debug kernel: [   19.774662] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:20 BebopDrone-C044004 user.debug kernel: [   20.209353] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:20 BebopDrone-C044004 user.debug kernel: [   20.304059] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:20 BebopDrone-C044004 daemon.info avahi-daemon[523]: Files changed, reloading.
+Jan  1 00:00:20 BebopDrone-C044004 daemon.info avahi-daemon[523]: Loading service file /etc/avahi/services/ardiscovery.service.
+Jan  1 00:00:20 BebopDrone-C044004 user.debug kernel: [   20.312547] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:20 BebopDrone-C044004 user.debug kernel: [   20.313801] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:20 BebopDrone-C044004 user.debug kernel: [   20.404426] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:21 BebopDrone-C044004 daemon.info avahi-daemon[523]: Service "BebopDrone-C044004" (/etc/avahi/services/ardiscovery.service) successfully established.
+Jan  1 00:00:26 BebopDrone-C044004 user.debug kernel: [   26.800303] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
+Jan  1 00:00:27 BebopDrone-C044004 user.debug kernel: [   27.095541] *** wlc_enable_mac(): Changing band 2 slot time from 25 to 25 (band default 20)
