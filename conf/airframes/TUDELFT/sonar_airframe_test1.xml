@@ -44,10 +44,10 @@
 <define name="SENSOR_SYNC_SEND_SONAR" value="TRUE"/>
 </module>
 
-	<load name="agl_dist.xml">
-	<!--<define name="AGL_DIST_SONAR_ID" value="ABI_BROADCAST" />-->
-	<define name="AGL_DIST_SONAR_MAX_RANGE" value="6" />
-       <define name="AGL_DIST_SONAR_MIN_RANGE" value="0.2" />
+	  <load name="agl_dist.xml">
+	<define name="ID" value="ABI_BROADCAST"/>
+	<define name="AGL_DIST_SONAR_MAX_RANGE" value="5" />
+       <define name="AGL_DIST_SONAR_MIN_RANGE" value="0.01" />
        <define name="AGL_DIST_SONAR_FILTER" value="5" />
      </load> 
 
@@ -56,6 +56,7 @@
     
     <load name="logger_file.xml">
       <define name="FILE_LOGGER_PATH" value="/data/ftp/internal_000"/>
+      <define name="MODULES_START"/>
     </load> 
 
 
@@ -71,10 +72,10 @@
       <define name="VIEWVIDEO_DOWNSIZE_FACTOR" value="1"/>
     </load>
 
-	<!--
+	
     <load name="orange_avoider.xml"/> 
     <load name="longtimeinblock.xml"/>
-    <load name="moving_waypoint.xml"/> -->
+    <load name="moving_waypoint.xml"/> 
 
   </modules>
 

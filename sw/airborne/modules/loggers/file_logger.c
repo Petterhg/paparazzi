@@ -33,6 +33,10 @@
 #include "firmwares/rotorcraft/stabilization.h"
 #include "state.h"
 #include "modules/sonar/agl_dist.h"
+#include "modules/sonar/sonar_bebop.h"
+#include "subsystems/gps/gps_datalink.h"
+#include "subsystems/gps.h"
+
 
 /** Set the default File logger path to the USB drive */
 #ifndef FILE_LOGGER_PATH
@@ -62,8 +66,8 @@ void file_logger_start(void)
   if (file_logger != NULL) {
     fprintf(
       file_logger,
-	  "counter,gyro_unscaled_p,gyro_unscaled_q,gyro_unscaled_r,accel_unscaled_x,accel_unscaled_y,accel_unscaled_z,mag_unscaled_x,mag_unscaled_y,mag_unscaled_z,COMMAND_THRUST,COMMAND_ROLL,COMMAND_PITCH,COMMAND_YAW,qi,qx,qy,qz\n"
-      /**"counter, agl_dist_value_filtered" */
+	  /**"counter, gyro_unscaled_p,gyro_unscaled_q,gyro_unscaled_r,accel_unscaled_x,accel_unscaled_y,accel_unscaled_z,mag_unscaled_x,mag_unscaled_y,mag_unscaled_z,COMMAND_THRUST,COMMAND_ROLL,COMMAND_PITCH,COMMAND_YAW,qi,qx,qy,qz\n"*/
+      "sonar_bebop.distance, gps.ecef_pos.x, gps.ecef_pos.y"
     );
   }
 }
@@ -86,9 +90,11 @@ void file_logger_periodic(void)
   static uint32_t counter;
   struct Int32Quat *quat = stateGetNedToBodyQuat_i();
 
-  fprintf(file_logger, "%d,%d ,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d \n", /**  */
-          counter,
-		  imu.gyro_unscaled.p,
+  fprintf(file_logger, "%d, %d, %d \n", /**  ,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d */
+		  sonar_bebop.distance, gps.ecef_pos.x, gps.ecef_pos.y
+
+		  /**imu.gyro_unscaled.p,
+
 		  imu.gyro_unscaled.q,
 		  imu.gyro_unscaled.r,
 		  imu.accel_unscaled.x,
@@ -105,10 +111,10 @@ void file_logger_periodic(void)
 		            quat->qx,
 		            quat->qy,
 		            quat->qz
+		*/
 
-		  /**
-		   * agl_dist_value_filtered
-           */
+
+
          );
   counter++;
 
