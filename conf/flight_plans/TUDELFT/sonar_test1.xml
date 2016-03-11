@@ -75,11 +75,11 @@
 	<go wp="TD"/>
 	</for>
     </block>
-<block name="cube">
+<!--block name="cube">
 	<for var="i" from="1" to="8">
       	<call fun="fcn_moving_waypoint(WP_CUBE)"/>
 	<go wp="CUBE"/>
-	</for>
+	</for-->
     </block>
     <block name="go_p2">
       <call fun="nav_set_heading_deg(90)"/>
