@@ -63,7 +63,7 @@
     </block>
     <block name="Standby" strip_button="Standby" strip_icon="home.png">
       <stay wp="STDBY"/>
-      <exception cond="fcnlongtimeinblock(block_time)" deroute="stay_p1"/> 
+      <!--exception cond="fcnlongtimeinblock(block_time)" deroute="stay_p1"/--> 
     </block>
     <block name="stay_p1">
       <stay wp="p1"/>
@@ -75,12 +75,12 @@
 	<go wp="TD"/>
 	</for>
     </block>
-<block name="cube">
+<!--block name="cube">
 	<for var="i" from="1" to="8">
       	<call fun="fcn_moving_waypoint(WP_CUBE)"/>
 	<go wp="CUBE"/>
 	</for>
-    </block>
+    </block-->
     <block name="go_p2">
       <call fun="nav_set_heading_deg(90)"/>
       <go wp="p2"/>
