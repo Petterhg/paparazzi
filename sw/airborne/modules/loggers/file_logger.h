@@ -27,8 +27,8 @@
 #ifndef FILE_LOGGER_H_
 #define FILE_LOGGER_H_
 
-extern void file_logger_start(void);
-extern void file_logger_stop(void);
-extern void file_logger_periodic(void);
+extern int file_logger_start(void);
+extern int file_logger_stop(void);
+extern int file_logger_periodic(void);
 
 #endif /* FILE_LOGGER_H_ */

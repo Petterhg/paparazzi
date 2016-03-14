@@ -33,6 +33,7 @@
 #include "firmwares/rotorcraft/stabilization.h"
 #include "state.h"
 #include "modules/sonar/agl_dist.h"
+#include "modules/periodic_switch/periodic_switch.h"
 
 /** Set the default File logger path to the USB drive */
 #ifndef FILE_LOGGER_PATH
@@ -43,7 +44,7 @@
 static FILE *file_logger = NULL;
 
 /** Start the file logger and open a new file */
-void file_logger_start(void)
+extern int file_logger_start(void) /* void ---> extern int*/
 {
   uint32_t counter = 0;
   char filename[512];
@@ -56,7 +57,7 @@ void file_logger_start(void)
     counter++;
     sprintf(filename, "%s/%05d.csv", STRINGIFY(FILE_LOGGER_PATH), counter);
   }
-
+  sprintf(filename, "%s/map.csv", STRINGIFY(FILE_LOGGER_PATH)); // working???
   file_logger = fopen(filename, "w");
 
   if (file_logger != NULL) {
@@ -66,25 +67,31 @@ void file_logger_start(void)
       /**"counter, agl_dist_value_filtered" */
     );
   }
+return 0; /* !!! */
 }
 
 /** Stop the logger an nicely close the file */
-void file_logger_stop(void)
+extern int file_logger_stop(void) /* void ---> extern int*/
 {
   if (file_logger != NULL) {
     fclose(file_logger);
     file_logger = NULL;
   }
+return 0; /* !!! */
 }
 
 /** Log the values to a csv file */
-void file_logger_periodic(void)
+extern int file_logger_periodic(void) /* void ---> extern int*/
 {
   if (file_logger == NULL) {
     return;
   }
+  if (logger_flag == NULL) {
+    return;
+  }
   static uint32_t counter;
   struct Int32Quat *quat = stateGetNedToBodyQuat_i();
+
 
   fprintf(file_logger, "%d,%d ,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d \n", /**  */
           counter,
@@ -111,5 +118,5 @@ void file_logger_periodic(void)
            */
          );
   counter++;
-
+return 0; /* !!! */
 }
