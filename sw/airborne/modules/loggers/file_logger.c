@@ -67,7 +67,7 @@ extern int file_logger_start(void) /* void ---> extern int*/
     fprintf(
       file_logger,
 	  /**"counter, gyro_unscaled_p,gyro_unscaled_q,gyro_unscaled_r,accel_unscaled_x,accel_unscaled_y,accel_unscaled_z,mag_unscaled_x,mag_unscaled_y,mag_unscaled_z,COMMAND_THRUST,COMMAND_ROLL,COMMAND_PITCH,COMMAND_YAW,qi,qx,qy,qz\n"*/
-      "counter, sonar shit, sonar distance, gps.ecef_pos.x, gps.ecef_pos.y"
+      "counter, sonar shit, sonar distance, gps.ecef_pos.x, gps.ecef_pos.y, gps.ecef_pos.z, gps.lla_pos.lon,gps.lla_pos.lat, gps.lla_pos.alt \n"
     );
   }
 return 0; /* !!! */
@@ -95,8 +95,8 @@ extern int file_logger_periodic(void) /* void ---> extern int*/
   static uint32_t counter;
   struct Int32Quat *quat = stateGetNedToBodyQuat_i();
 
-  fprintf(file_logger, "%d, %d, %d, %d, %d \n", /**  ,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d */
-		  counter, sonar_bebop.distance, gps.ecef_pos.x, gps.ecef_pos.y
+  fprintf(file_logger, "%d, %d, %d, %d, %d, %d, %d, %d, %d \n", /**  ,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d */
+		  counter, sonar_bebop.distance, gps.ecef_pos.x, gps.ecef_pos.y, gps.ecef_pos.z, gps.lla_pos.lon,gps.lla_pos.lat, gps.lla_pos.alt 
 
 		  /**imu.gyro_unscaled.p,
 
