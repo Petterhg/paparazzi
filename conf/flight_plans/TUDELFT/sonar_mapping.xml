@@ -54,6 +54,11 @@
       <call fun="NavKillThrottle()"/>
       <attitude pitch="0" roll="0" throttle="0" until="FALSE" vmode="throttle"/>
     </block>
+    <block name="Stop logging groundtest">
+      <call fun="NavKillThrottle()"/>
+      <call fun="file_logger_stop()"/>
+      <deroute block="Holding point"/>
+    </block>
     <block name="Start Engine">
       <call fun="NavResurrect()"/>
       <attitude pitch="0" roll="0" throttle="0" until="FALSE" vmode="throttle"/>
@@ -70,6 +75,11 @@
       <stay wp="p1"/>
       <call fun="file_logger_stop()"/>
     </block>
+<block name="Logging_ground_test">
+     <call fun="file_logger_start()"/>
+     <call fun="logger_switch(1)"/>
+     <deroute block="Holding point"/>
+   </block>
   <block name="Paralell Mapping 03">
      <call fun="file_logger_start()"/>
      <call fun="logger_switch(1)"/>
