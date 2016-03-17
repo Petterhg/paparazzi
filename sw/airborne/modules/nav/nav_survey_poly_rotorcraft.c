@@ -386,7 +386,7 @@ bool_t nav_survey_poly_run(void)
 
           if ((LastPoint.y + (dSweep / 2)) <= MaxY || LastPoint.y + (dSweep / 2) >= 0) {    //Sweep back
             //fprintf(stderr,"nao cabe meio\n");
-            dSweep = -dSweep;
+            dSweep = -dSweep;            //  <--------------------- turning back!!!!!
           } else {
             //fprintf(stderr,"cabe meio\n");
           }
@@ -495,7 +495,7 @@ bool_t nav_survey_poly_run(void)
       return FALSE;
   }
 
-  return TRUE;
+  return (dSweep>0);
 
 }
 

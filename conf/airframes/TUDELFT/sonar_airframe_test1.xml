@@ -71,6 +71,8 @@
       <define name="VIEWVIDEO_QUALITY_FACTOR" value="100"/>
       <define name="VIEWVIDEO_DOWNSIZE_FACTOR" value="1"/>
     </load>
+   <load name="periodic_switch.xml"/>
+   <load name="nav_survey_poly_rotorcraft.xml"/>
 
 	
     <load name="orange_avoider.xml"/> 

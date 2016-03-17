@@ -36,7 +36,7 @@
 #include "modules/sonar/sonar_bebop.h"
 #include "subsystems/gps/gps_datalink.h"
 #include "subsystems/gps.h"
-
+#include "modules/periodic_switch/periodic_switch.h"
 
 /** Set the default File logger path to the USB drive */
 #ifndef FILE_LOGGER_PATH
@@ -47,7 +47,7 @@
 static FILE *file_logger = NULL;
 
 /** Start the file logger and open a new file */
-void file_logger_start(void)
+extern int file_logger_start(void) /* void ---> extern int*/
 {
   uint32_t counter = 0;
   char filename[512];
@@ -60,38 +60,43 @@ void file_logger_start(void)
     counter++;
     sprintf(filename, "%s/%05d.csv", STRINGIFY(FILE_LOGGER_PATH), counter);
   }
-
+  sprintf(filename, "%s/map.csv", STRINGIFY(FILE_LOGGER_PATH)); // working???
   file_logger = fopen(filename, "w");
 
   if (file_logger != NULL) {
     fprintf(
       file_logger,
-	  /**"counter, sonar_bebop.distance, gyro_unscaled_p,gyro_unscaled_q,gyro_unscaled_r,accel_unscaled_x,accel_unscaled_y,accel_unscaled_z,mag_unscaled_x,mag_unscaled_y,mag_unscaled_z,COMMAND_THRUST,COMMAND_ROLL,COMMAND_PITCH,COMMAND_YAW,qi,qx,qy,qz\n"*/
-      "counter, sonar shit, sonar distance, gps.ecef_pos.x, gps.ecef_pos.y"
+	  /**"counter, gyro_unscaled_p,gyro_unscaled_q,gyro_unscaled_r,accel_unscaled_x,accel_unscaled_y,accel_unscaled_z,mag_unscaled_x,mag_unscaled_y,mag_unscaled_z,COMMAND_THRUST,COMMAND_ROLL,COMMAND_PITCH,COMMAND_YAW,qi,qx,qy,qz\n"*/
+      "counter, sonar shit, sonar distance, gps.ecef_pos.x, gps.ecef_pos.y, gps.ecef_pos.z, gps.lla_pos.lon,gps.lla_pos.lat, gps.lla_pos.alt \n"
     );
   }
+return 0; /* !!! */
 }
 
 /** Stop the logger an nicely close the file */
-void file_logger_stop(void)
+extern int file_logger_stop(void) /* void ---> extern int*/
 {
   if (file_logger != NULL) {
     fclose(file_logger);
     file_logger = NULL;
   }
+return 0; /* !!! */
 }
 
 /** Log the values to a csv file */
-void file_logger_periodic(void)
+extern int file_logger_periodic(void) /* void ---> extern int*/
 {
   if (file_logger == NULL) {
+    return;
+  }
+  if (logger_flag == NULL) {
     return;
   }
   static uint32_t counter;
   struct Int32Quat *quat = stateGetNedToBodyQuat_i();
 
-  fprintf(file_logger, "%d, %d, %d, %d, %d\n", /**  ,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d */
-		  counter, sonar_bebop.distance, gps.ecef_pos.x, gps.ecef_pos.y
+  fprintf(file_logger, "%d, %d, %d, %d, %d, %d, %d, %d, %d \n", /**  ,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d */
+		  counter, sonar_bebop.distance, gps.ecef_pos.x, gps.ecef_pos.y, gps.ecef_pos.z, gps.lla_pos.lon,gps.lla_pos.lat, gps.lla_pos.alt 
 
 		  /**imu.gyro_unscaled.p,
 
@@ -117,5 +122,5 @@ void file_logger_periodic(void)
 
          );
   counter++;
-
+return 0; /* !!! */
 }

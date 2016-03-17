@@ -1,0 +1,16 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="periodic_switch">
+  <doc>
+    <description>switching periodic functions on/off from the flightplan</description>
+  </doc>
+  <header>
+    <file name="periodic_switch.h"/>
+  </header>
+  <init fun="init_pediodic_switch"/>
+  <event fun="logger_switch"/>
+  <makefile>
+    <file name="periodic_switch.c"/>
+  </makefile>
+</module>
+
