@@ -1,0 +1,15 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="sonar_filtering">
+  <doc>
+    <description>filter the sonar the recorded sonar data</description>
+  </doc>
+  <header>
+    <file name="sonar_filtering.h"/>
+  </header>
+  <event fun="sonar_filter_fcn"/>
+  <makefile>
+    <file name="sonar_filtering.c"/>
+  </makefile>
+</module>
+

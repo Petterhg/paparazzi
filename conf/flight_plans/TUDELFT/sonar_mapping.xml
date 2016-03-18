@@ -6,6 +6,7 @@
 #include "subsystems/ahrs.h"
 #include "subsystems/electrical.h"
 #include "subsystems/datalink/datalink.h"
+#include "guidance/guidance_h_ref.h" <!-- added for adjustable max speed -->
 </header>
   <waypoints>
     <waypoint name="HOME" x="0.0" y="0.0"/>
@@ -72,36 +73,25 @@
       <stay wp="STDBY"/> 
     </block>
     <block name="stay_p1">
-      <stay wp="p1"/>
-      <call fun="file_logger_stop()"/>
+        <call fun="file_logger_stop()"/>
+        <call fun="!gh_set_max_speed(2)"/>      
+        <stay wp="p1"/>      
     </block>
 <block name="Logging_ground_test">
      <call fun="file_logger_start()"/>
      <call fun="logger_switch(1)"/>
      <deroute block="Holding point"/>
    </block>
-  <block name="Paralell Mapping 03">
+  <block name="Paralell Mapping 03 SPEED FIX">
+     <call fun="!gh_set_max_speed(1)"/> 
      <call fun="file_logger_start()"/>
      <call fun="logger_switch(1)"/>
      <call fun="nav_survey_poly_setup(WP__OZ1, 4, 0.3, 30)"/>
      <call fun="nav_survey_poly_run()"/>
      <deroute block="stay_p1"/>
    </block>
-  <block name="Paralell Mapping 05">
-     <call fun="file_logger_start()"/>
-     <call fun="logger_switch(1)"/>
-     <call fun="nav_survey_poly_setup(WP__OZ1, 4, 0.5, 30)"/>
-     <call fun="nav_survey_poly_run()"/>
-     <deroute block="stay_p1"/>
-   </block>
-  <block name="Paralell Mapping 1">
-     <call fun="file_logger_start()"/>
-     <call fun="logger_switch(1)"/>
-     <call fun="nav_survey_poly_setup(WP__OZ1, 4, 1, 30)"/>
-     <call fun="nav_survey_poly_run()"/>
-     <deroute block="stay_p1"/>
-   </block>
-  <block name="Longitude Mapping 0.3">
+  <block name="Longitude Mapping 0.3 SPEED FIX">
+     <call fun="!gh_set_max_speed(1)" /> 
      <call fun="file_logger_start()"/>
      <call fun="logger_switch(1)"/>
      <call fun="nav_survey_poly_setup(WP__OZ1, 4, 0.3, 0)"/>
