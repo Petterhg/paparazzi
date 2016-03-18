@@ -95,7 +95,7 @@ extern int file_logger_periodic(void) /* void ---> extern int*/
   static uint32_t counter;
   struct Int32Quat *quat = stateGetNedToBodyQuat_i();
 
-  fprintf(file_logger, "%d, %d, %d, %d, %d, %d, %d, %d, %d \n", /**  ,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d */
+  fprintf(file_logger, "%d, %f, %f, %d, %d, %d, %d, %d, %d \n", /**  ,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d */
 		  counter, sonar_bebop.distance, gps.ecef_pos.x, gps.ecef_pos.y, gps.ecef_pos.z, gps.lla_pos.lon,gps.lla_pos.lat, gps.lla_pos.alt 
 
 		  /**imu.gyro_unscaled.p,

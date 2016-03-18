@@ -1,0 +1,15 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="findobstaclesfrommap">
+  <doc>
+    <description>This module takes as input a file stored in the drone containing sonar data and gps data (alt, long, lat pos), finds</description>
+  </doc>
+  <header>
+    <file name="findobstaclesfrommap.h"/>
+  </header>
+  <event fun="obstaclefinder"/>
+  <makefile>
+    <file name="findobstaclesfrommap.c"/>
+  </makefile>
+</module>
+
