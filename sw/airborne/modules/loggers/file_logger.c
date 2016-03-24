@@ -89,14 +89,21 @@ extern int file_logger_periodic(void) /* void ---> extern int*/
   if (file_logger == NULL) {
     return;
   }
-  if (logger_flag == NULL) {
+  if (logger_flag == 0) {
     return;
   }
   static uint32_t counter;
   struct Int32Quat *quat = stateGetNedToBodyQuat_i();
 
-  fprintf(file_logger, "%d, %f, %d, %d, %d, %d, %d, %d \n", /**  ,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d */
-		  counter, sonar_bebop.distance, gps.ecef_pos.x, gps.ecef_pos.y, gps.ecef_pos.z, gps.lla_pos.lon,gps.lla_pos.lat, gps.lla_pos.alt 
+
+stateCalcPositionLla_i(); // do I really need this?
+
+//if (!bit_is_set(state.pos_status)
+
+
+  fprintf(file_logger, "%d, %d, %f, %d, %d, %d, %d, %d, %d \n", /**  ,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d,%d */
+		//  counter, sonar_bebop.distance, gps.ecef_pos.x, gps.ecef_pos.y, gps.ecef_pos.z, gps.lla_pos.lon,gps.lla_pos.lat, stateGetPositionLla_i()->alt 
+counter, sonar_bebop.meas, sonar_bebop.distance, stateGetPositionEcef_i()->x,  stateGetPositionEcef_i()->y,  stateGetPositionEcef_i()->z, stateGetPositionLla_i()->lat,stateGetPositionLla_i()->lon, gps.lla_pos.alt 
 
 		  /**imu.gyro_unscaled.p,
 
