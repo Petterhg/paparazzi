@@ -88,7 +88,7 @@ int process_log(void) {
         while( fscanf(nozero2,"%d, %f, %f, %f", &counter, &sonar_array[i], &gpsx_array[i], &gpsy_array[i]) >= 1){i++;}      
 
         fclose(nozero2);
-        FILE *filtered = fopen("/data/ftp/internal_000/map_filtered_sonar.csv","w"); // removed to the top
+        FILE *filtered = fopen("/data/ftp/internal_000/map_filtered_sonar.csv","w"); 
 
 
 
