@@ -13,7 +13,7 @@
 #ifndef SONAR_MAPPING_H
 #define SONAR_MAPPING_H
 
-// extern void process_log;
+ extern int process_log(void);
 
 #endif
 

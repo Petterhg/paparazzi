@@ -58,6 +58,7 @@
     <block name="Stop logging groundtest">
       <call fun="NavKillThrottle()"/>
       <call fun="file_logger_stop()"/>
+      <call fun="process_log()"/>
       <deroute block="Holding point"/>
     </block>
     <block name="Start Engine">
@@ -74,6 +75,7 @@
     </block>
     <block name="stay_p1">
         <call fun="file_logger_stop()"/>
+        <call fun="process_log()"/>
         <call fun="!gh_set_max_speed(2)"/>      
         <stay wp="p1"/>      
     </block>

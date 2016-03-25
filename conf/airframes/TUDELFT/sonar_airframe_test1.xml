@@ -73,6 +73,7 @@
     </load>
    <load name="periodic_switch.xml"/>
    <load name="nav_survey_poly_rotorcraft.xml"/>
+   <load name="sonar_mapping.xml"/>
 
 	
     <load name="orange_avoider.xml"/> 
