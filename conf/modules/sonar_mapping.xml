@@ -1,0 +1,15 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="sonar_mapping">
+  <doc>
+    <description>Module for processing logged data into information about cyberzoo sectors.</description>
+  </doc>
+  <header>
+    <file name="sonar_mapping.h"/>
+  </header>
+  <event fun="process_log"/>
+  <makefile>
+    <file name="sonar_mapping.c"/>
+  </makefile>
+</module>
+
