@@ -55,11 +55,12 @@
     </block>
     <block name="Start logging">
       <call fun="file_logger_start()"/>
-      <call fun="logger_switch(1)"/>
+      <call fun="logger_switch(1,0)"/>
       <deroute block="Holding point"/>
     </block>
    <block name="Stop logging">
       <call fun="file_logger_stop()"/>
+      <call fun="process_log()"/>
       <deroute block="Holding point"/>
     </block>
    

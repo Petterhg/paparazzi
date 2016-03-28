@@ -1,0 +1,113 @@
+______________________________________________________________
+
+                       FLIGHT TESTS
+______________________________________________________________
+
+        "Take a ride into the danger zone"
+                      /Kenny Loggings/
+         https://www.youtube.com/watch?v=yK0P1Bk8Cx4
+______________________________________________________________
+
+1) MAPPING GROUND TESTS
+        
+        Files:  sonar_airframe_MAPPING_TEST.xml airframe
+                01sonar_groundtest.xml          flight plan
+
+        
+        Please save the logs in a structured way, to make it
+        easier to understand them later!
+
+
+
+        Tests:  Logging Sonar Measurements
+                        In the flight plan start the logging and
+                        stop with the corresponding blocks.
+
+                        ftp 192.168.42.1
+                        cd internal_000
+                        ls
+                        get
+
+                        then you should see the following files:
+                                map.csv
+                                map_nozero.csv 
+                                map_filtered_sonar.csv
+                                000_final_map.csv
+                                map_visualization.csv
+
+                        I'm also trying to print map_viusalization
+                        to the Paparazzi Center window terminal.
+                                
+
+                Test Mapped Area
+                        ORIENTATION TEST: we must check if the map
+                        is oriented correctly. It is possible that
+                        the map is rotated 90 degrees.
+                        Start the logging, and carry the drone along
+                        a line with a known orientation (walk south-
+                        north, or walk along one side of the cyber-
+                        zoo). Then open the map_visualization.csv
+                        and see if the orientation is correct.
+
+                        TEST BORDERS: walk along the borders of the
+                        cyberzoo, and check the borders of the map-
+                        ped area. Remember that the map is has the
+                        SP corners, and the OZ is rotated within it
+                        with 33 degrees. Also the OZ is
+                        significantly smaller than the cyberzoo.
+                        (Just remember how the SP and OZ cubes
+                        looked together, and also remember how ob-
+                        stacle zone looks in the flightplan.)
+_____________________________________________________________________
+
+
+2) DAVID'S MAPPING
+
+        Files:  sonar_airframe_MAPPING_TEST.xml airframe
+                02nosonar_mapping.xml           flight plan
+
+                Test the survey run
+
+                        Is it stable?
+                        Or we are ending up in the net again.
+
+
+
+                        Set mapping speed
+                        Measure the mapping run with a stopwatch.
+                        If there are overshoots on the turning po-
+                        ints then reduce speed.
+                        The speed can be set in the flightplan,
+                        
+                        line 107<call fun="!gh_set_max_speed(1)"/> 
+                        
+
+        
+                        Altitude hold?
+                        Check if there are huge deviations in the
+                        altitude. Now the height for mapping is set
+                        for 3 meters. It can be changed by overwrit-
+                        ing the waypoints. To high altitude might
+                        cause the instabilities (however I think
+                        3-4 meter should be ok...), with to low alti-
+                        tude we might crash into the obstacles, es-
+                        pecially if the alt hold is not working cor-
+                        rectly.
+____________________________________________________________________
+
+
+
+3) MAPPING RUN + SONAR MAPPING
+
+        Files:  sonar_airframe_MAPPING_TEST.xml airframe
+                03sonar_mapping2.xml            flight plan
+
+                DO NOT CONFUSE FLIGHT PLAN WITH sonar_mapping.xml!!!
+
+        The two previous tests combined. Survey run with active 
+        sonar logging and data postprocessing. Mapping alt and 
+        speed can be adjusted as in TEST 2.
+____________________________________________________________________
+                        
+          
+              

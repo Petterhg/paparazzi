@@ -1,0 +1,135 @@
+<!DOCTYPE flight_plan SYSTEM "../flight_plan.dtd">
+
+<flight_plan alt="3.5" ground_alt="0" lat0="51.990634" lon0="4.376789" max_dist_from_home="8" name="First Test" security_height="0.4">
+  <header>
+#include "autopilot.h"
+#include "subsystems/ahrs.h"
+#include "subsystems/electrical.h"
+#include "subsystems/datalink/datalink.h"
+#include "guidance/guidance_h_ref.h" <!-- added for adjustable max speed -->
+</header>
+  <waypoints>
+    <waypoint name="HOME" x="0.0" y="0.0"/>
+    <waypoint name="CLIMB" x="1" y="0"/>
+    <waypoint name="STDBY" x="-0.5" y="0.5" alt="3.5"/>
+    <waypoint name="p1" x="0" y="1" alt="3.5"/>
+    <waypoint name="p2" x="0" y="-1" alt="1"/>
+    <waypoint name="CUBE" x="0" y="-1" alt="1"/>
+    <waypoint name="TD" x="1" y="-1"/>
+    <waypoint lat="51.9906213" lon="4.3768628" name="_CZ1"/>
+    <waypoint lat="51.9905874" lon="4.3767766" name="_CZ2"/>
+    <waypoint lat="51.9906409" lon="4.3767226" name="_CZ3"/>
+    <waypoint lat="51.990667" lon="4.376806" name="_CZ4"/>
+    <!--waypoint lat="51.990624" lon="4.376845" name="_OZ1"/>
+    <waypoint lat="51.990601" lon="4.376782" name="_OZ2"/>
+    <waypoint alt="11.5" lat="51.990638" lon="4.376748" name="_OZ3"/>
+    <waypoint lat="51.990657" lon="4.376804" name="_OZ4"/-->
+    <waypoint lat="51.990601" lon="4.376782" name="_OZ1"/>
+    <waypoint lat="51.990638" lon="4.376748" name="_OZ2"/>    
+    <waypoint lat="51.990657" lon="4.376804" name="_OZ3"/>
+    <waypoint lat="51.990624" lon="4.376845" name="_OZ4"/>
+        <!-- waypoints for mapping -->
+        <waypoint height="3" name="_WPM0" x="-0.4" y="-3.7"/>
+	<waypoint height="3" name="_WPM3" x="-0.56" y="-3.4267"/>
+	<waypoint height="3" name="_WPM4" x="-0.72" y="-3.1533"/>
+	<waypoint height="3" name="_WPM7" x="-0.88" y="-2.88"/>
+	<waypoint height="3" name="_WPM8" x="-1.04" y="-2.6067"/>
+	<waypoint height="3" name="_WPM11" x="-1.2" y="-2.3333"/>
+	<waypoint height="3" name="_WPM12" x="-1.36" y="-2.06"/>
+	<waypoint height="3" name="_WPM15" x="-1.52" y="-1.7867"/>
+	<waypoint height="3" name="_WPM16" x="-1.68" y="-1.5133"/>
+	<waypoint height="3" name="_WPM19" x="-1.84" y="-1.24"/>
+	<waypoint height="3" name="_WPM20" x="-2" y="-0.9667"/>
+	<waypoint height="3" name="_WPM23" x="-2.16" y="-0.6933"/>
+	<waypoint height="3" name="_WPM24" x="-2.32" y="-0.42"/>
+	<waypoint height="3" name="_WPM27" x="-2.48" y="-0.1467"/>
+	<waypoint height="3" name="_WPM28" x="-2.64" y="0.1267"/>
+	<waypoint height="3" name="_WPM31" x="-2.8" y="0.4"/>
+
+	<waypoint height="3" name="_WPM1" x="3.9" y="-1"/>
+	<waypoint height="3" name="_WPM2" x="3.7067" y="-0.76"/>
+	<waypoint height="3" name="_WPM5" x="3.5133" y="-0.52"/>
+	<waypoint height="3" name="_WPM6" x="3.32" y="-0.28"/>
+	<waypoint height="3" name="_WPM9" x="3.1267" y="-0.04"/>
+	<waypoint height="3" name="_WPM10" x="2.9333" y="0.2"/>
+	<waypoint height="3" name="_WPM13" x="2.74" y="0.44"/>
+	<waypoint height="3" name="_WPM14" x="2.5467" y="0.68"/>
+	<waypoint height="3" name="_WPM17" x="2.3533" y="0.92"/>
+	<waypoint height="3" name="_WPM18" x="2.16" y="1.16"/>
+	<waypoint height="3" name="_WPM21" x="1.9667" y="1.4"/>
+	<waypoint height="3" name="_WPM22" x="1.7733" y="1.64"/>
+	<waypoint height="3" name="_WPM25" x="1.58" y="1.88"/>
+	<waypoint height="3" name="_WPM26" x="1.3867" y="2.12"/>
+	<waypoint height="3" name="_WPM29" x="1.1933" y="2.36"/>
+	<waypoint height="3" name="_WPM30" x="1" y="2.6"/>
+   </waypoints>
+<sectors>
+    <sector color="red" name="CyberZoo">
+      <corner name="_CZ1"/>
+      <corner name="_CZ2"/>
+      <corner name="_CZ3"/>
+      <corner name="_CZ4"/>
+    </sector>
+    <sector color="#FF9922" name="ObstacleZone">
+      <corner name="_OZ1"/>
+      <corner name="_OZ2"/>
+      <corner name="_OZ3"/>
+      <corner name="_OZ4"/>
+    </sector>
+  </sectors>
+<blocks>
+    <block name="Wait GPS">
+      <call fun="NavKillThrottle()"/>
+      <while cond="!GpsFixValid()"/>
+    </block>
+    <block name="Geo init">
+      <while cond="LessThan(NavBlockTime(), 10)"/>
+      <call fun="NavSetGroundReferenceHere()"/>
+    </block>
+    <block name="Holding point">
+      <call fun="NavKillThrottle()"/>
+      <attitude pitch="0" roll="0" throttle="0" until="FALSE" vmode="throttle"/>
+    </block>
+    <block name="Start Engine">
+      <call fun="NavResurrect()"/>
+      <attitude pitch="0" roll="0" throttle="0" until="FALSE" vmode="throttle"/>
+    </block>
+    <block name="VerticalTakeoff" strip_button="Takeoff" strip_icon="takeoff.png">
+      <exception cond="stateGetPositionEnu_f()->z > 2.0" deroute="Standby"/>
+      <call fun="NavSetWaypointHere(WP_CLIMB)"/>
+      <call fun="NavSetWaypointHere(WP_STDBY)"/>
+      <stay climb="nav_climb_vspeed" vmode="climb" wp="CLIMB"/>
+    </block>
+    <block name="Standby" strip_button="Standby" strip_icon="home.png">
+      <stay wp="STDBY"/> 
+    </block>
+    <block name="Mapping">
+      <call fun="!gh_set_max_speed(1)"/>      
+      <go wp="_WPM0"/>
+      <path wpts="_WPM0, _WPM1, _WPM2, _WPM3, _WPM4, _WPM5, _WPM6, _WPM7, _WPM8, _WPM9, _WPM10, _WPM11, _WPM12, _WPM13, _WPM14, _WPM15, _WPM16, _WPM17, _WPM18, _WPM19, _WPM20, _WPM21, _WPM22, _WPM23, _WPM24, _WPM25, _WPM26, _WPM27, _WPM28, _WPM29,_WPM30, _WPM31,"/>
+      <go wp="STDBY"/>
+      <stay wp="STDBY"/>
+    </block>
+    <block name="stay_p1">
+        <!--call fun="file_logger_stop()"/-->
+        <!--call fun="process_log()"/-->
+        <call fun="!gh_set_max_speed(2)"/>      
+        <stay wp="p1"/>      
+    </block>
+    <block name="Land here" strip_button="Land Here" strip_icon="land-right.png">
+      <call fun="NavSetWaypointHere(WP_TD)"/>
+    </block>
+    <block name="Land">
+      <go wp="TD"/>
+    </block>
+    <block name="Flare">
+      <exception cond="NavDetectGround()" deroute="Holding point"/>
+      <exception cond="!nav_is_in_flight()" deroute="Landed"/>
+      <call fun="NavStartDetectGround()"/>
+      <stay climb="nav_descend_vspeed" vmode="climb" wp="TD"/>
+    </block>
+    <block name="Landed">
+      <attitude pitch="0" roll="0" throttle="0" until="FALSE" vmode="throttle"/>
+    </block>
+  </blocks>
+</flight_plan>
