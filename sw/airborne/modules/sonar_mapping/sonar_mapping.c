@@ -158,7 +158,7 @@ int process_log(void) {
                                 else {FLAG_long = 0;};
                                 break;
                         
-                        } 
+                        } else {if (i == CellNumX - 1){FLAG_long = i;};}
                 }
                 // find cell lattitude for measurement k
                 for(j=0; j<CellNumY; j++){
@@ -166,7 +166,7 @@ int process_log(void) {
                                 if(j != 0){FLAG_lat = j-1;}
                                 else {FLAG_lat = 0;}
                                 break;
-                        }
+                        } else {if (j == CellNumY - 1){FLAG_lat = j;};}
                 }
                 
                 MapZone[FLAG_long][FLAG_lat].checked = 1; // set cell to checked
