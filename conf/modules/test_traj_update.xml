@@ -1,0 +1,18 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="test_traj_update">
+  <doc>
+    <description>testing periodic functions to update trajectory. Periodically checking position, then making a decision and a waypoint based upon that.</description>
+  </doc>
+  <header>
+    <file name="test_traj_update.h"/>
+  </header>
+  <init fun="init_test_traj_update()"/>
+  <periodic fun="periodic_test_traj_update()" freq="5" start="init_test_traj_update" stop="stop_test_traj_update" autorun="TRUE"/>
+  <event fun="stop_test_traj_update"/>
+  <!--event fun="setPotentialField(2)"/-->
+  <makefile>
+    <file name="test_traj_update.c"/>
+  </makefile>
+</module>
+

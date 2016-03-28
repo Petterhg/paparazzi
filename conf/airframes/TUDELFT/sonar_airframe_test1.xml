@@ -54,10 +54,10 @@
 
     <load name="send_imu_mag_current.xml"/>
     
-    <load name="logger_file.xml">
+    <!--load name="logger_file.xml">
       <define name="FILE_LOGGER_PATH" value="/data/ftp/internal_000"/>
       <define name="MODULES_START"/>
-    </load> 
+    </load--> 
 
 
     <load name="video_thread.xml">
@@ -72,11 +72,11 @@
       <define name="VIEWVIDEO_DOWNSIZE_FACTOR" value="1"/>
     </load>
    <load name="periodic_switch.xml"/>
-   <load name="nav_survey_poly_rotorcraft.xml"/>
+   <!--load name="nav_survey_poly_rotorcraft.xml"/-->
    <load name="sonar_mapping.xml"/>
-
-	
-    <load name="orange_avoider.xml"/> 
+        <!--load name="test_traj_update.xml"/-->
+        <load name="test_traj_update.xml"/>
+    <!--load name="orange_avoider.xml"/--> 
     <load name="longtimeinblock.xml"/>
     <load name="moving_waypoint.xml"/> 
 

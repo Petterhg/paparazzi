@@ -14,9 +14,10 @@
 #define PERIODIC_SWITCH_H
 
 extern int logger_flag;
+extern int trajectory_flag;
 
 void init_pediodic_switch(void);
-extern int logger_switch(int);
+extern int logger_switch(int, int);
 
 #endif
 

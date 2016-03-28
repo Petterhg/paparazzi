@@ -526,7 +526,7 @@ bool_t nav_set_heading_towards(float x, float y)
   struct FloatVect2 pos_diff;
   VECT2_DIFF(pos_diff, target, *stateGetPositionEnu_f());
   // don't change heading if closer than 0.5m to target
-  if (VECT2_NORM2(pos_diff) > 0.25) {
+  if (VECT2_NORM2(pos_diff) > 0.05) { // modified from 0.25!!!!
     float heading_f = atan2f(pos_diff.x, pos_diff.y);
     nav_heading = ANGLE_BFP_OF_REAL(heading_f);
   }
