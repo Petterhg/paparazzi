@@ -66,7 +66,7 @@ int process_log(void) {
                 if ((sonar != 0)&&(counter % 35 ==0)){
                         linecounter++;
                         alt = alt / 1000;               // OptiTrack alt to meters
-                        sonar = -(sonar - (alt-0.25));  // removing altitude variations
+                        sonar = -(sonar - (alt-45.006 -0.25));  // removing altitude variations
                         gpsx = gpsx / 10000000;         // obtaining float coordinates
                         gpsy = gpsy / 10000000;         // obtaining float coordinates
                         
@@ -138,7 +138,7 @@ int process_log(void) {
         int FLAG_long = 0;
         int FLAG_lat = 0;
 
-        int sonarTreshold = 1.5; // treshold is 2 meters
+        float sonarTreshold = 1.75; // treshold is 2 meters
         float gpsxC, gpsyC;
         float sonarC, filtered_sonarC;
 

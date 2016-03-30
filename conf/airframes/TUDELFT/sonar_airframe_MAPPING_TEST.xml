@@ -149,6 +149,8 @@
   <section name="INS" prefix="INS_">
     <define name="SONAR_MAX_RANGE" value="4.0"/>
     <define name="SONAR_UPDATE_ON_AGL" value="TRUE"/>
+    <define name="USE_GPS_ALT" value="TRUE"/>
+    <define name="VFF_R_GPS" value="0.01"/>
   </section> 
 
   <section name="RC_SETPOINT" prefix="STABILIZATION_ATTITUDE_">
@@ -248,7 +250,7 @@
   </section>
 
   <section name="NAVIGATION" prefix="NAV_">
-    <define  name="CLIMB_VSPEED" value="1.3" />
+    <define  name="CLIMB_VSPEED" value="1" />
     <define  name="DESCEND_VSPEED" value="-1.0" />
   </section>
 
