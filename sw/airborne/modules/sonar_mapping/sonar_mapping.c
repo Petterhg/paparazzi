@@ -138,7 +138,7 @@ int process_log(void) {
         int FLAG_long = 0;
         int FLAG_lat = 0;
 
-        int sonarTreshold = 2; // treshold is 2 meters
+        int sonarTreshold = 1.5; // treshold is 2 meters
         float gpsxC, gpsyC;
         float sonarC, filtered_sonarC;
 
@@ -214,22 +214,6 @@ for (j=CellNumY-1; j>0; j--){
         fclose(visualization);
 return 0;
 
-// printing visualization to terminal too
-for (j=CellNumY-1; j>0; j--){
-                for (i=0; i<CellNumX; i++){
-                        
-                        if(MapZone[i][j].checked == 1){
-                                if(MapZone[i][j].safe == 1){
-                                        printf( "   ");  //checked and safe
-                                } else {printf( " x ");} // checked and obstacle
-                        } else {printf( " . ");};        // unchecked
-                }
-        printf("\n");
-        }; 
-
-
-        printf( "\n\n\n checked and safe: [  ]   checked and obstacle [ x ]   unchecked [ . ]\n");
-return 0;
 
 }
 

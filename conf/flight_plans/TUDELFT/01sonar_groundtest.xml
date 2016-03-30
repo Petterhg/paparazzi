@@ -49,6 +49,13 @@
       <while cond="LessThan(NavBlockTime(), 10)"/>
       <call fun="NavSetGroundReferenceHere()"/>
     </block>
+
+   <block name="Stop logging">
+      <call fun="file_logger_stop()"/>
+      <call fun="process_log()"/>
+      <deroute block="Holding point"/>
+    </block>
+
     <block name="Holding point">
       <call fun="NavKillThrottle()"/>
       <attitude pitch="0" roll="0" throttle="0" until="FALSE" vmode="throttle"/>
@@ -58,11 +65,7 @@
       <call fun="logger_switch(1,0)"/>
       <deroute block="Holding point"/>
     </block>
-   <block name="Stop logging">
-      <call fun="file_logger_stop()"/>
-      <call fun="process_log()"/>
-      <deroute block="Holding point"/>
-    </block>
+
    
   </blocks>
 </flight_plan>

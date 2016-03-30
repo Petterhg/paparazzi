@@ -35,25 +35,18 @@
 
   <modules main_freq="512">
 
-
-    <load name="geo_mag.xml"/>
-    <load name="air_data.xml"/>
-
 <module name="sonar_bebop.xml">
 <define name="USE_SONAR" value="FALSE"/>
 <define name="SENSOR_SYNC_SEND_SONAR" value="TRUE"/>
 </module>
 
-	  <load name="agl_dist.xml">
+	  <!--load name="agl_dist.xml">
 	<define name="ID" value="ABI_BROADCAST"/>
 	<define name="AGL_DIST_SONAR_MAX_RANGE" value="5" />
        <define name="AGL_DIST_SONAR_MIN_RANGE" value="0.01" />
        <define name="AGL_DIST_SONAR_FILTER" value="5" />
-     </load> 
+     </load> -->
 
-
-    <load name="send_imu_mag_current.xml"/>
-    
     <load name="logger_file.xml">
       <define name="FILE_LOGGER_PATH" value="/data/ftp/internal_000"/>
       <define name="MODULES_START"/>
@@ -78,9 +71,6 @@
     <load name="moving_waypoint.xml"/> 
 
   </modules>
-
-
-
 
   <commands>
     <axis name="PITCH" failsafe_value="0"/>
@@ -108,6 +98,10 @@
     <set servo="BOTTOM_RIGHT" value="motor_mixing.commands[MOTOR_BACK_RIGHT]"/>
     <set servo="BOTTOM_LEFT" value="motor_mixing.commands[MOTOR_BACK_LEFT]"/>
   </command_laws>
+
+ <section name="FAILSAFE" prefix="FAILSAFE_">
+    <define name="DELAY_WITHOUT_GPS" value="1" unit="s"/>
+  </section>
 
   <section name="AIR_DATA" prefix="AIR_DATA_">
     <define name="CALC_AIRSPEED" value="FALSE"/>
@@ -220,7 +214,7 @@
     <define name="REF_RATE_R" value="28.0"/>
 
     <!--Maxium yaw rate, to avoid instability-->
-    <define name="MAX_R" value="120.0"/> <!--deg/s-->
+    <define name="MAX_R" value="100.0"/> <!--deg/s-->
 
     <!-- second order filter parameters -->
     <define name="FILT_OMEGA" value="50.0"/>
@@ -239,22 +233,22 @@
   </section>
 
   <section name="GUIDANCE_V" prefix="GUIDANCE_V_">
-    <define name="HOVER_KP" value="283"/>
-    <define name="HOVER_KD" value="82"/>
-    <define name="HOVER_KI" value="70"/>
-    <define name="NOMINAL_HOVER_THROTTLE" value="0.5"/>
+    <define name="HOVER_KP" value="300"/>
+    <define name="HOVER_KD" value="90"/>
+    <define name="HOVER_KI" value="75"/>
+    <define name="NOMINAL_HOVER_THROTTLE" value="0.51"/>
     <define name="ADAPT_THROTTLE_ENABLED" value="FALSE"/>
   </section>
 
   <section name="GUIDANCE_H" prefix="GUIDANCE_H_">
-    <define name="MAX_BANK" value="32" unit="deg"/>
-    <define name="PGAIN" value="79"/>
+    <define name="MAX_BANK" value="14" unit="deg"/>
+    <define name="PGAIN" value="89"/>
     <define name="DGAIN" value="100"/>
-    <define name="IGAIN" value="30"/>
+    <define name="IGAIN" value="40"/>
   </section>
 
   <section name="NAVIGATION" prefix="NAV_">
-    <define  name="CLIMB_VSPEED" value="1.0" />
+    <define  name="CLIMB_VSPEED" value="1.3" />
     <define  name="DESCEND_VSPEED" value="-1.0" />
   </section>
 
