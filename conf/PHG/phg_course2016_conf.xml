@@ -1,35 +1,13 @@
 <conf>
   <aircraft
-   name="bebop_avoid"
-   ac_id="2"
-   airframe="airframes/TUDELFT/tudelft_course2016_bebop_avoider.xml"
+   name="PHG_bebop"
+   ac_id="241"
+   airframe="airframes/PHG/phg_course_bebop_opencv.xml"
    radio="radios/dummy.xml"
-   telemetry="telemetry/default_rotorcraft.xml"
-   flight_plan="flight_plans/TUDELFT/tudelft_course2016_avoid_orange_cyberzoo.xml"
-   settings="settings/rotorcraft_basic.xml settings/control/rotorcraft_guidance.xml settings/control/stabilization_rate.xml ../conf/modules/cv_colorfilter.xml"
-   settings_modules="modules/geo_mag.xml modules/air_data.xml modules/video_thread.xml modules/cv_colorfilter.xml"
-   gui_color="#db67fffffaeb"
-  />
-  <aircraft
-   name="bebop_opencv"
-   ac_id="3"
-   airframe="airframes/examples/course_bebop_opencv.xml"
-   radio="radios/dummy.xml"
-   telemetry="telemetry/default_rotorcraft.xml"
+   telemetry="telemetry/PHG/phg_default_rotorcraft.xml"
    flight_plan="flight_plans/dummy.xml"
    settings="settings/rotorcraft_basic.xml settings/control/rotorcraft_guidance.xml [settings/control/stabilization_att_indi.xml] [settings/control/stabilization_rate.xml] ../conf/modules/digital_cam.xml ../conf/modules/video_usb_logger.xml"
    settings_modules="modules/geo_mag.xml modules/air_data.xml modules/video_thread.xml modules/setFilterHSV.xml modules/video_rtp_stream.xml"
-   gui_color="#ffffb1c0b1c0"
-  />
-  <aircraft
-   name="bebop_video"
-   ac_id="1"
-   airframe="airframes/examples/bebop_GUI_HSV_filter.xml"
-   radio="radios/dummy.xml"
-   telemetry="telemetry/default_rotorcraft.xml"
-   flight_plan="flight_plans/dummy.xml"
-   settings="settings/rotorcraft_basic.xml settings/control/rotorcraft_guidance.xml [settings/control/stabilization_att_indi.xml] settings/control/stabilization_rate.xml"
-   settings_modules="modules/geo_mag.xml modules/air_data.xml modules/video_thread.xml [modules/digital_cam_video.xml] modules/setFilterHSV.xml [modules/video_rtp_stream.xml]"
    gui_color="#ffffb1c0b1c0"
   />
 </conf>
