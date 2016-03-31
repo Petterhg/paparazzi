@@ -865,6 +865,18 @@
 
 
   <!--108 is free -->
+  <!-- ADDED FOR OBJECTRACKING -->
+ <message name="TRACKOBJECT" id="108">
+    <field name="targetPosx" type="uint16"/>
+    <field name="targetPosy" type="uint16"/>
+    <field name="Area" type="uint32"/>
+    <field name="CollisionDetect" type="uint8"/>
+    <field name="ObjectDetect" type="uint8"/>
+    <field name="nObjects" type="uint8"/>
+    <field name="wheretoGo" type="char[]"/>
+    <field name="trackState" type="char[]"/>
+    <field name="actionFlag" type="uint8"/>
+  </message> 
 
   <message name="MULTIGAZE_METERS" id="109">
     <field name="multigaze_meters" type="float[]"/>

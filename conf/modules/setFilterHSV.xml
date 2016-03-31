@@ -1,0 +1,36 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="setFilterHSV" dir="computer_vision">
+  <doc>
+    <description>setFilterHSV</description>
+  </doc>
+
+  <settings>
+    <dl_settings>
+      <dl_settings NAME="setFilterHSV">
+         <dl_setting var="H_MIN"  min="0" step="1" max="255" shortname="Hue_min" />
+         <dl_setting var="H_MAX"  min="0" step="1" max="255" shortname="Hue_max" />
+         <dl_setting var="S_MIN"  min="0" step="1" max="255" shortname="Sat_min" />
+         <dl_setting var="S_MAX"  min="0" step="1" max="255" shortname="Sat_max" />
+         <dl_setting var="V_MIN"  min="0" step="1" max="255" shortname="Val_min" />
+         <dl_setting var="V_MAX"  min="0" step="1" max="255" shortname="Val_max" />
+         <dl_setting var="tresholdArea"  min="5000" step="10" max="40000" shortname="TrackArea" />
+         <dl_setting var="trackObject"  min="0" step="1" max="1" shortname="Trackin[ON|OFF]" />
+        <dl_setting var="offsetPosx"  min="0" step="1" max="90" shortname="X-offset" />
+        <dl_setting var="offsetPosy"  min="0" step="1" max="90" shortname="Y-offset" />
+      </dl_settings>
+    </dl_settings>
+  </settings>
+
+  <!--<depends>video_thread</depends>
+-->
+  <header>
+    <file name="setFilterHSV.h"/>
+  </header>
+
+  <init fun="setFilterHSV_init()"/>
+  <makefile>
+    <file name="setFilterHSV.c"/>
+  </makefile>
+</module>
+

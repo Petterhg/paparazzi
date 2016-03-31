@@ -1,0 +1,16 @@
+<!DOCTYPE module SYSTEM "module.dtd">
+
+<module name="trackObject_avoid">
+  <doc>
+    <description>Example on how to use the colours detected to avoid orange pole in the cyberzoo</description>
+  </doc>
+  <header>
+    <file name="trackObject_avoid.h"/>
+  </header>
+  <init fun="trackObject_avoid_set()"/>
+  <periodic fun="trackObject_avoid_periodic()" freq="4"/>
+  <makefile>
+    <file name="trackObject_avoid.c"/>
+  </makefile>
+</module>
+
